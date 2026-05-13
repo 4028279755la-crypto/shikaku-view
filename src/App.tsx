@@ -96,17 +96,28 @@ function App() {
         {mode === "catalog" && (
           <section>
             <h2 className="section-title">📚 カタログ（{qualifications.length}件）</h2>
+            <p className="catalog-notice">
+              ⚠️ 日程は2026年5月時点の概算です。実際の申込期間・試験日は各資格の公式サイト（カードからリンク）で必ずご確認ください。
+            </p>
             <ul className="catalog-list">
               {qualifications.map((q) => {
                 const watched = watches.some((w) => w.qualificationId === q.id);
                 return (
                   <li key={q.id} className="catalog-card">
-                    <div>
+                    <div className="catalog-card-main">
                       <strong>{q.name}</strong>
                       <div className="meta">
                         <span className="category">{q.category}</span>
                         <span>{q.organizer}</span>
                       </div>
+                      <a
+                        href={q.officialUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="official-link"
+                      >
+                        公式サイト →
+                      </a>
                     </div>
                     {watched ? (
                       <span className="watched">追加済</span>

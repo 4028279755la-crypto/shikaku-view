@@ -60,6 +60,27 @@ body {
 .btn-link { background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 12px; }
 .watched { font-size: 12px; color: var(--text-muted); }
 
+.catalog-notice {
+  padding: 10px 12px;
+  background: #fff7e8;
+  border: 1px solid #f0d090;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  color: #8a6914;
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+.catalog-card-main { flex: 1; min-width: 0; }
+.official-link {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--accent);
+  text-decoration: none;
+}
+.official-link:hover { text-decoration: underline; }
+
 .footer { text-align: center; color: var(--text-muted); padding: 24px 0 0; font-size: 11px; }
 
 /* === カレンダー === */
