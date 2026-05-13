@@ -4,6 +4,7 @@ import { QUALIFICATION_CATALOG, findQualificationById } from "./data/qualificati
 import { loadCustomQualifications } from "./utils/storage";
 import { loadNotificationSettings, notifyUpcoming } from "./utils/notifications";
 import { Calendar } from "./components/Calendar";
+import { CATEGORIES } from "./types/qualification";
 import "./App.css";
 
 type Mode = "list" | "catalog" | "calendar" | "settings";
@@ -99,37 +100,69 @@ function App() {
             <p className="catalog-notice">
               ⚠️ 日程は2026年5月時点の概算です。実際の申込期間・試験日は各資格の公式サイト（カードからリンク）で必ずご確認ください。
             </p>
-            <ul className="catalog-list">
-              {qualifications.map((q) => {
-                const watched = watches.some((w) => w.qualificationId === q.id);
-                return (
-                  <li key={q.id} className="catalog-card">
-                    <div className="catalog-card-main">
-                      <strong>{q.name}</strong>
-                      <div className="meta">
-                        <span className="category">{q.category}</span>
-                        <span>{q.organizer}</span>
-                      </div>
-                      <a
-                        href={q.officialUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="official-link"
-                      >
-                        公式サイト →
-                      </a>
-                    </div>
-                    {watched ? (
-                      <span className="watched">追加済</span>
-                    ) : (
-                      <button className="btn-primary" onClick={() => add({ qualificationId: q.id })}>
-                        追加
-                      </button>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
+            {CATEGORIES.map((cat) => {
+              const items = qualifications.filter((q) => q.category === cat);
+              if (items.length === 0) return null;
+              const watchedCount = items.filter((q) =>
+                watches.some((w) => w.qualificationId === q.id)
+              ).length;
+              return (
+                <details key={cat} className="catalog-category">
+                  <summary className="catalog-category-summary">
+                    <span className="catalog-category-name">{cat}</span>
+                    <span className="catalog-category-count">
+                      {items.length}件
+                      {watchedCount > 0 && (
+                        <span className="catalog-category-watched">
+                          （{watchedCount}件追加済）
+                        </span>
+                      )}
+                    </span>
+                  </summary>
+                  <ul className="catalog-list">
+                    {items.map((q) => {
+                      const watched = watches.some((w) => w.qualificationId === q.id);
+                      return (
+                        <li key={q.id} className="catalog-card">
+                          <div className="catalog-card-main">
+                            <div className="catalog-card-header">
+                              <strong>{q.name}</strong>
+                              {q.shortName && q.shortName !== q.name && (
+                                <span className="short-name">（{q.shortName}）</span>
+                              )}
+                            </div>
+                            <div className="meta">
+                              <span>{q.organizer}</span>
+                            </div>
+                            {q.description && (
+                              <p className="catalog-card-description">{q.description}</p>
+                            )}
+                            <a
+                              href={q.officialUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="official-link"
+                            >
+                              公式サイト →
+                            </a>
+                          </div>
+                          {watched ? (
+                            <span className="watched">追加済</span>
+                          ) : (
+                            <button
+                              className="btn-primary"
+                              onClick={() => add({ qualificationId: q.id })}
+                            >
+                              追加
+                            </button>
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </details>
+              );
+            })}
           </section>
         )}
 
