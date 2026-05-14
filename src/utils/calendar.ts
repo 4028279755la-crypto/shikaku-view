@@ -35,19 +35,37 @@ export function getTargetSchedule(
   const now = new Date();
   const upcoming = q.schedules
     .filter((s) => {
+      // 通年型は常に「現在も受験可能」とみなして候補に含める
+      if (s.isYearRound) return true;
       try {
-        return isAfter(parseISO(s.applicationStart), now) ||
-          isAfter(parseISO(s.examDate), now);
+        if (s.applicationStart && isAfter(parseISO(s.applicationStart), now)) return true;
+        if (s.examDate && isAfter(parseISO(s.examDate), now)) return true;
+        return false;
       } catch {
         return false;
       }
     })
-    .sort((a, b) => a.applicationStart.localeCompare(b.applicationStart));
+    .sort((a, b) => {
+      // 通年型は最後（ソート順は applicationStart 基準、無いものは末尾）
+      const aKey = a.applicationStart ?? "9999-99-99";
+      const bKey = b.applicationStart ?? "9999-99-99";
+      return aKey.localeCompare(bKey);
+    });
   return upcoming[0] ?? q.schedules[q.schedules.length - 1];
 }
 
-/** 1日に発生する単発イベント */
-export type DayEventKind = "application-start" | "application-end" | "exam" | "result";
+/**
+ * 1日に発生する単発イベント。
+ *
+ * - `application-start` / `application-end` / `exam` / `result`: カタログのスケジュール由来
+ * - `user-target-exam`: 通年型試験でユーザーが個人的に設定した受験予定日（Watch.userTargetExamDate）
+ */
+export type DayEventKind =
+  | "application-start"
+  | "application-end"
+  | "exam"
+  | "result"
+  | "user-target-exam";
 
 export interface DayEvent {
   watchId: string;
@@ -77,6 +95,8 @@ export function eventsOnDate(
       ["application-end", s.applicationEnd],
       ["exam", s.examDate],
       ["result", s.resultDate],
+      // 通年型のユーザー個人受験予定日
+      ["user-target-exam", s.isYearRound ? w.userTargetExamDate : undefined],
     ];
     for (const [kind, iso] of checks) {
       if (!iso) continue;
@@ -121,6 +141,8 @@ export function applicationSpansOnDate(
     if (!q) continue;
     const s = getTargetSchedule(w, q);
     if (!s) continue;
+    // 通年型 or 申込期間が定義されていないスケジュールはバー描画対象外
+    if (!s.applicationStart || !s.applicationEnd) continue;
     try {
       const start = parseISO(s.applicationStart);
       const end = parseISO(s.applicationEnd);

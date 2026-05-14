@@ -42,12 +42,19 @@ export function nowIso(): string {
   return new Date().toISOString();
 }
 
-/** date input(YYYY-MM-DD) を ISO（ローカル 00:00:00）に */
-export function dateInputToIso(value: string): string {
-  return new Date(value + "T00:00:00").toISOString();
+/**
+ * date input(YYYY-MM-DD) を**ナイーブ形式 ISO**（`"YYYY-MM-DDT00:00:00"`）に変換。
+ * カタログ（qualification-catalog.ts）の日付フォーマットと統一するため、
+ * タイムゾーン付き ISO（`.toISOString()` の `Z` 付き）を**使わない**。
+ *
+ * 不正な YYYY-MM-DD が来た場合は空文字を返す。
+ */
+export function toIsoMidnight(value: string): string {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return "";
+  return `${value}T00:00:00`;
 }
 
-/** ISO を date input(YYYY-MM-DD) 用文字列に */
+/** ISO 文字列を date input(YYYY-MM-DD) 用の value 文字列に */
 export function isoToDateInput(iso: string): string {
   try {
     return format(parseISO(iso), "yyyy-MM-dd");

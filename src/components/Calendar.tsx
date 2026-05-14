@@ -27,6 +27,7 @@ const KIND_COLOR: Record<DayEvent["kind"], string> = {
   "application-end": "#E5B547",
   exam: "#FF6B47",
   result: "#9B7CC9",
+  "user-target-exam": "#3DB0E0",
 };
 
 const KIND_LABEL: Record<DayEvent["kind"], string> = {
@@ -34,6 +35,7 @@ const KIND_LABEL: Record<DayEvent["kind"], string> = {
   "application-end": "申込締切",
   exam: "試験",
   result: "結果",
+  "user-target-exam": "受験予定日",
 };
 
 interface Props {

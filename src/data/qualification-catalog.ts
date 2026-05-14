@@ -23,13 +23,11 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "IPA（情報処理推進機構）",
     officialUrl: "https://www.ipa.go.jp/shiken/kubun/fe.html",
-    description: "IT技術者の基礎的知識・技能を問う国家試験。通年CBT。",
+    description: "ITエンジニアの登竜門となるスキル証明型の国家試験。新人エンジニアやIT職リスキリング層の最初の一歩に位置づく。通年CBTで受験者は年10万人規模、合格率は概ね4〜5割。",
     schedules: [
       {
         label: "2026年 通年CBT（概算）",
-        applicationStart: "2026-01-01T00:00:00",
-        applicationEnd: "2026-12-15T00:00:00",
-        examDate: "2026-06-15T00:00:00",
+        isYearRound: true,
         fee: 7500,
       },
     ],
@@ -41,7 +39,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "IPA（情報処理推進機構）",
     officialUrl: "https://www.ipa.go.jp/shiken/kubun/ap.html",
-    description: "IT技術者の応用的知識・技能を問う国家試験。年2回（春・秋）。",
+    description: "中堅エンジニア向けの応用力を問うスキル証明型国家試験。SI企業の昇進要件にも使われ、エンジニア・SEのキャリア中盤層向け。年2回（春・秋）、受験者は年5万人規模で合格率は2割前後。",
     schedules: [
       {
         label: "2026年春期（概算）",
@@ -68,13 +66,11 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "IPA（情報処理推進機構）",
     officialUrl: "https://www.ipa.go.jp/shiken/kubun/ip.html",
-    description: "ITを利活用する全ての社会人向けの基礎的国家試験。通年CBT。",
+    description: "ITの基礎知識を社会人全般に証明するスキル証明型国家試験。非IT職のリスキリングや新入社員研修の定番。通年CBT、受験者は年20万人超、合格率は概ね5割。",
     schedules: [
       {
         label: "2026年 通年CBT（概算）",
-        applicationStart: "2026-01-01T00:00:00",
-        applicationEnd: "2026-12-15T00:00:00",
-        examDate: "2026-06-15T00:00:00",
+        isYearRound: true,
         fee: 7500,
       },
     ],
@@ -86,13 +82,11 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "IPA（情報処理推進機構）",
     officialUrl: "https://www.ipa.go.jp/shiken/kubun/sg.html",
-    description: "情報セキュリティ管理の基礎を問う国家試験。通年CBT。",
+    description: "セキュリティ管理側人材を想定したスキル証明型の国家試験。情シス担当者やマネジメント層のリスキリング向け。通年CBTで合格率は概ね5割前後。",
     schedules: [
       {
         label: "2026年 通年CBT（概算）",
-        applicationStart: "2026-01-01T00:00:00",
-        applicationEnd: "2026-12-15T00:00:00",
-        examDate: "2026-06-15T00:00:00",
+        isYearRound: true,
         fee: 7500,
       },
     ],
@@ -104,7 +98,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "IPA（情報処理推進機構）",
     officialUrl: "https://www.ipa.go.jp/shiken/kubun/sc.html",
-    description: "サイバーセキュリティの高度国家資格。年2回（春・秋）。",
+    description: "サイバーセキュリティ専門人材の名称独占国家資格（登録セキスペ）。セキュリティエンジニアやCSIRT人材向け。年2回（春・秋）、合格率は概ね2割。",
     schedules: [
       {
         label: "2026年春期（概算）",
@@ -129,7 +123,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "IPA（情報処理推進機構）",
     officialUrl: "https://www.ipa.go.jp/shiken/kubun/nw.html",
-    description: "ネットワーク技術の高度国家試験。年1回（春期）。",
+    description: "ネットワーク設計・運用の専門性を示す高度区分のスキル証明型国家試験。インフラエンジニア向け。年1回（春期）で合格率は概ね15%前後の難関。",
     schedules: [
       {
         label: "2026年春期（概算）",
@@ -147,7 +141,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "IPA（情報処理推進機構）",
     officialUrl: "https://www.ipa.go.jp/shiken/kubun/db.html",
-    description: "データベース技術の高度国家試験。年1回（秋期）。",
+    description: "DB設計・運用の専門性を示す高度区分のスキル証明型国家試験。DBエンジニア・データ基盤担当者向け。年1回（秋期）で合格率は概ね15〜18%。",
     schedules: [
       {
         label: "2026年秋期（概算）",
@@ -165,7 +159,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "IPA（情報処理推進機構）",
     officialUrl: "https://www.ipa.go.jp/shiken/kubun/pm.html",
-    description: "プロジェクト管理の高度国家試験。年1回（秋期）。",
+    description: "ITプロジェクト管理の高度区分スキル証明型国家試験。SIer・PMOキャリアの定番。年1回（秋期）、論述式を含み合格率は概ね14%前後。",
     schedules: [
       {
         label: "2026年秋期（概算）",
@@ -183,7 +177,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "IPA（情報処理推進機構）",
     officialUrl: "https://www.ipa.go.jp/shiken/kubun/st.html",
-    description: "IT戦略策定の最高位国家試験。年1回（春期）。",
+    description: "IT戦略・経営層レベルを想定したスキル証明型の高度国家試験。CIO候補・ITコンサル志望向け。年1回（春期）、合格率は概ね15%前後で最上位区分。",
     schedules: [
       {
         label: "2026年春期（概算）",
@@ -201,7 +195,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "日本ディープラーニング協会（JDLA）",
     officialUrl: "https://www.jdla.org/certificate/general/",
-    description: "ディープラーニングを事業活用するための基礎知識を問う民間検定。年6回程度。",
+    description: "AI・ディープラーニング活用の基礎を示すスキル証明型の民間検定。事業企画・営業・コンサル等の非エンジニア層のAIリスキリング向け。年6回程度、合格率は概ね6〜7割。",
     schedules: [
       {
         label: "2026年 第3回（概算）",
@@ -219,7 +213,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "日本ディープラーニング協会（JDLA）",
     officialUrl: "https://www.jdla.org/certificate/engineer/",
-    description: "ディープラーニング実装能力を問う民間検定。年2回。",
+    description: "ディープラーニングの実装力を測るスキル証明型の民間検定。機械学習エンジニア・データサイエンティスト志望向け。指定講座受講が必要で年2回、合格率は概ね6〜7割。",
     schedules: [
       {
         label: "2026年 第1回（概算）",
@@ -238,7 +232,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "データサイエンティスト協会",
     officialUrl: "https://www.datascientist.or.jp/dskentei/",
-    description: "データサイエンスの基礎知識を問う民間検定。年複数回。",
+    description: "データ分析の基礎知識を体系的に証明するスキル証明型民間検定。マーケ・企画職のデータ人材リスキリング向け。年複数回、合格率は概ね5割前後。",
     schedules: [{ label: "2026年6月（概算・要確認）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-05-15T00:00:00", examDate: "2026-06-20T00:00:00", fee: 11000 }],
   },
   {
@@ -248,8 +242,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Microsoft / オデッセイコミュニケーションズ",
     officialUrl: "https://mos.odyssey-com.co.jp/",
-    description: "Excel操作の民間スキル認定。通年。",
-    schedules: [{ label: "2026年 通年CBT（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 10780 }],
+    description: "Excel操作スキルを国際的に証明するMicrosoft公式のスキル証明資格。事務職・学生・転職時の即戦力アピール向け。通年CBT、受験者は年数万人規模で合格率は8割前後。",
+    schedules: [{ label: "2026年 通年CBT（概算）", isYearRound: true, fee: 10780 }],
   },
   {
     id: "q_mos_word",
@@ -258,8 +252,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Microsoft / オデッセイコミュニケーションズ",
     officialUrl: "https://mos.odyssey-com.co.jp/",
-    description: "Word操作の民間スキル認定。通年。",
-    schedules: [{ label: "2026年 通年CBT（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 10780 }],
+    description: "Word操作スキルをMicrosoft公式に証明するスキル証明型認定。文書作成業務を伴う事務職・学生のアピール材料に。通年CBTで合格率は8割前後。",
+    schedules: [{ label: "2026年 通年CBT（概算）", isYearRound: true, fee: 10780 }],
   },
   {
     id: "q_aws_clf",
@@ -268,8 +262,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Amazon Web Services",
     officialUrl: "https://aws.amazon.com/jp/certification/certified-cloud-practitioner/",
-    description: "AWSクラウドの基礎を問うエントリーレベル認定。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 15000 }],
+    description: "AWS全体像を非エンジニアも含めて証明するスキル証明型のエントリー認定。IT営業・PM・新人エンジニアのクラウド入門に最適。通年CBTで合格ライン目安700点程度（公式は明示せず）。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 15000 }],
   },
   {
     id: "q_aws_saa",
@@ -278,8 +272,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Amazon Web Services",
     officialUrl: "https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/",
-    description: "AWSアーキテクト設計のアソシエイト認定。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 22500 }],
+    description: "AWS設計実務を担えることを示すスキル証明型アソシエイト認定。クラウドエンジニア・SAキャリアの定番ステップ。通年CBTで合格ライン目安720点程度（公式は明示せず）、転職市場でも評価が高い。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 22500 }],
   },
   {
     id: "q_aws_sap",
@@ -288,8 +282,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Amazon Web Services",
     officialUrl: "https://aws.amazon.com/jp/certification/certified-solutions-architect-professional/",
-    description: "AWSアーキテクト設計のプロフェッショナル認定。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 45000 }],
+    description: "AWS上級設計力を示すスキル証明型プロフェッショナル認定。大規模システム設計や移行案件を担うシニアアーキテクト向け。通年CBT・180分の長丁場で合格ライン目安750点程度（公式は明示せず）。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 45000 }],
   },
   {
     id: "q_gcp_ace",
@@ -298,8 +292,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Google Cloud",
     officialUrl: "https://cloud.google.com/certification/cloud-engineer",
-    description: "GCPの実務スキルを問うアソシエイト認定。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 30000 }],
+    description: "Google Cloud上での運用・デプロイ実務を示すスキル証明型アソシエイト認定。GCP案件のクラウドエンジニア・データ基盤担当向け。通年CBT、2年で再認定。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 30000 }],
   },
   {
     id: "q_az900",
@@ -308,8 +302,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Microsoft",
     officialUrl: "https://learn.microsoft.com/ja-jp/certifications/azure-fundamentals/",
-    description: "Azure入門レベル認定。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 13750 }],
+    description: "Azureの基本概念を証明するスキル証明型のエントリー認定。Microsoft環境を扱う社内SE・IT営業・新人エンジニアのクラウド入門向け。通年CBTで合格ライン目安700点程度（公式は明示せず）。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 13750 }],
   },
   {
     id: "q_az104",
@@ -318,8 +312,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Microsoft",
     officialUrl: "https://learn.microsoft.com/ja-jp/certifications/azure-administrator/",
-    description: "Azure運用管理のアソシエイト認定。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 21103 }],
+    description: "Azureの実運用力を示すスキル証明型アソシエイト認定。Azure環境を担当するインフラ・運用エンジニア向け。通年CBT、合格ライン目安700点程度（公式は明示せず）で実技寄り。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 21103 }],
   },
   {
     id: "q_lpic1",
@@ -328,8 +322,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "LPI（Linux Professional Institute）",
     officialUrl: "https://www.lpi.org/our-certifications/lpic-1-overview",
-    description: "Linuxシステム管理者の国際認定。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 16500 }],
+    description: "Linux基本運用力を示すスキル証明型の国際ベンダー中立認定。インフラエンジニア・SREのキャリア初期向け。通年CBTで2試験合格が必要、5年で再認定。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 16500 }],
   },
   {
     id: "q_ccna",
@@ -338,8 +332,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Cisco Systems",
     officialUrl: "https://www.cisco.com/c/ja_jp/training-events/training-certifications/certifications/associate/ccna.html",
-    description: "ネットワーク基礎の国際的なシスコ認定。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 36300 }],
+    description: "ネットワーク基礎を国際的に証明するシスコ社のスキル証明認定。NWエンジニア・インフラ若手の登竜門。通年CBT、3年で再認定。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 36300 }],
   },
   {
     id: "q_security_plus",
@@ -348,8 +342,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "CompTIA",
     officialUrl: "https://www.comptia.jp/certif/security_plus/",
-    description: "情報セキュリティの国際的なベンダー中立認定。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 47900 }],
+    description: "情報セキュリティの基礎を示すスキル証明型のベンダー中立国際認定。セキュリティエンジニア入門・外資/防衛系志望に強い。通年CBT、3年で再認定。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 47900 }],
   },
   {
     id: "q_oracle_bronze",
@@ -358,8 +352,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Oracle",
     officialUrl: "https://www.oracle.com/jp/education/certification/",
-    description: "Oracle Database 基礎の認定。通年。",
-    schedules: [{ label: "2026年 通年(概算)", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 14300 }],
+    description: "Oracle Databaseの基礎運用を証明するスキル証明型ベンダー認定。業務系SI企業の若手DB担当向け。通年CBTでDB入門の定番。",
+    schedules: [{ label: "2026年 通年(概算)", isYearRound: true, fee: 14300 }],
   },
   {
     id: "q_java_bronze",
@@ -368,8 +362,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Oracle",
     officialUrl: "https://www.oracle.com/jp/education/certification/jse-9886108-ja.html",
-    description: "Java言語の基礎を問うベンダー認定。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 14300 }],
+    description: "Javaプログラミングの基礎力を証明するスキル証明型のOracle公式認定。SIer新人やプログラミング初学者向け。通年CBTで合格率は概ね7割。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 14300 }],
   },
   {
     id: "q_python_basic",
@@ -378,8 +372,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Pythonエンジニア育成推進協会",
     officialUrl: "https://www.pythonic-exam.com/exam/basic",
-    description: "Python言語の基礎を問う民間検定。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 11000 }],
+    description: "Python文法の基礎理解を示すスキル証明型の民間検定。データ分析・AIリスキリング初学者やプログラミング転職組向け。通年CBTで合格率は概ね7〜8割。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 11000 }],
   },
   {
     id: "q_au",
@@ -388,7 +382,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "IPA（情報処理推進機構）",
     officialUrl: "https://www.ipa.go.jp/shiken/kubun/au.html",
-    description: "システム監査の高度国家試験。年1回（春期）。",
+    description: "情報システム監査の専門性を示す高度区分のスキル証明型国家試験。内部監査・IT監査・公認会計士補完層向け。年1回（春期）、合格率は概ね15%前後。",
     schedules: [{ label: "2026年春期（概算）", applicationStart: "2026-01-15T00:00:00", applicationEnd: "2026-02-04T00:00:00", examDate: "2026-04-19T00:00:00", fee: 7500 }],
   },
   {
@@ -398,7 +392,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "IPA（情報処理推進機構）",
     officialUrl: "https://www.ipa.go.jp/shiken/kubun/es.html",
-    description: "組込みシステム開発の高度国家試験。年1回（秋期）。",
+    description: "組込み・IoT分野の専門性を示す高度区分スキル証明型国家試験。組込みエンジニア・ファームウェア開発者向け。年1回（秋期）、合格率は概ね15〜17%。",
     schedules: [{ label: "2026年秋期（概算）", applicationStart: "2026-07-15T00:00:00", applicationEnd: "2026-08-05T00:00:00", examDate: "2026-10-18T00:00:00", fee: 7500 }],
   },
   {
@@ -408,7 +402,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "IPA（情報処理推進機構）",
     officialUrl: "https://www.ipa.go.jp/shiken/kubun/sm.html",
-    description: "ITサービス運用管理の高度国家試験。年1回（秋期）。",
+    description: "ITサービス運用・改善の専門性を示す高度区分スキル証明型国家試験。運用責任者・SREマネージャ向け。年1回（秋期）、合格率は概ね14%前後。",
     schedules: [{ label: "2026年秋期（概算）", applicationStart: "2026-07-15T00:00:00", applicationEnd: "2026-08-05T00:00:00", examDate: "2026-10-18T00:00:00", fee: 7500 }],
   },
   {
@@ -418,7 +412,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "IPA（情報処理推進機構）",
     officialUrl: "https://www.ipa.go.jp/shiken/kubun/sa.html",
-    description: "情報システム設計の高度国家試験。年1回（春期）。",
+    description: "業務システム設計の専門性を示す高度区分スキル証明型国家試験。アプリケーションアーキテクトや上級SE向け。年1回（春期）、合格率は概ね15%前後。",
     schedules: [{ label: "2026年春期（概算）", applicationStart: "2026-01-15T00:00:00", applicationEnd: "2026-02-04T00:00:00", examDate: "2026-04-19T00:00:00", fee: 7500 }],
   },
 
@@ -432,7 +426,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "日本商工会議所",
     officialUrl: "https://www.kentei.ne.jp/bookkeeping",
-    description: "商業簿記の基礎を問う民間検定。統一試験は年3回、ネット試験は通年。",
+    description: "商業簿記の基礎を示すスキル証明型の民間検定。経理・事務職志望や個人事業主の会計入門向け。統一試験は年3回、ネット試験は通年で受験者は年20万人超、合格率は概ね4〜5割。",
     schedules: [
       {
         label: "2026年6月 統一試験（概算）",
@@ -457,7 +451,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "日本商工会議所",
     officialUrl: "https://www.kentei.ne.jp/bookkeeping",
-    description: "商業簿記・工業簿記を問う民間検定。経理事務の入口。",
+    description: "商業簿記＋工業簿記の中級レベルを示すスキル証明型の民間検定。経理転職・財務職志望の事実上のラインとして広く要求される。統一試験は年3回・ネット試験は通年、合格率は概ね20〜30%。",
     schedules: [
       {
         label: "2026年6月 統一試験（概算）",
@@ -482,7 +476,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "日本商工会議所",
     officialUrl: "https://www.kentei.ne.jp/bookkeeping",
-    description: "商業簿記・会計学・工業簿記・原価計算を網羅する最高位検定。年2回。",
+    description: "会計学・原価計算を含む簿記最上位のスキル証明型民間検定。税理士受験資格にも繋がるため、経理上級・税理士志望向け。年2回で合格率は概ね10%前後の難関。",
     schedules: [
       {
         label: "2026年6月（概算）",
@@ -507,13 +501,11 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "金融財政事情研究会 / 日本FP協会",
     officialUrl: "https://www.jafp.or.jp/exam/",
-    description: "ファイナンシャル・プランニングの基礎国家技能検定。CBT通年。",
+    description: "ライフプラン・税・保険の基礎を示す名称独占の国家技能検定。金融・保険入社前後の若手や、家計知識リスキリング層向け。CBT通年で合格率は学科・実技とも概ね7〜8割。",
     schedules: [
       {
         label: "2026年 CBT通年（概算）",
-        applicationStart: "2026-01-01T00:00:00",
-        applicationEnd: "2026-12-15T00:00:00",
-        examDate: "2026-06-30T00:00:00",
+        isYearRound: true,
         fee: 8000,
       },
     ],
@@ -525,13 +517,11 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "金融財政事情研究会 / 日本FP協会",
     officialUrl: "https://www.jafp.or.jp/exam/",
-    description: "FP実務レベルの国家技能検定。CBT通年。",
+    description: "実務で使える水準を示す名称独占の国家技能検定。金融・保険・不動産業界の中堅やAFP登録志望者向け。CBT通年で合格率は学科4〜5割・実技5〜6割程度。",
     schedules: [
       {
         label: "2026年 CBT通年（概算）",
-        applicationStart: "2026-01-01T00:00:00",
-        applicationEnd: "2026-12-15T00:00:00",
-        examDate: "2026-06-30T00:00:00",
+        isYearRound: true,
         fee: 11700,
       },
     ],
@@ -543,7 +533,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "金融財政事情研究会 / 日本FP協会",
     officialUrl: "https://www.jafp.or.jp/exam/",
-    description: "FP上級者向け国家技能検定。学科+実技で年1〜2回。",
+    description: "FP系最上位の名称独占国家技能検定。富裕層担当のIFA・プライベートバンカー志望向け。学科は年3回・実技は年1〜2回で学科合格率は概ね10〜15%の難関。",
     schedules: [
       {
         label: "2026年9月 学科（概算）",
@@ -561,7 +551,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "公認会計士・監査審査会（金融庁）",
     officialUrl: "https://www.fsa.go.jp/cpaaob/kouninkaikeishi-shiken/",
-    description: "会計監査の独占国家資格。短答式（5月・12月）/論文式（8月）。",
+    description: "監査業務の独占国家資格（業務独占）。監査法人志望や上場企業CFOキャリア向け。短答式（5月・12月）/論文式（8月）、最終合格率は概ね10%前後で受験者は年1〜2万人規模。",
     schedules: [
       {
         label: "2026年第I回 短答式（概算）",
@@ -590,7 +580,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "国税審議会（国税庁）",
     officialUrl: "https://www.nta.go.jp/taxes/shiraberu/shikaku/zeirishi/",
-    description: "税務の独占国家資格。年1回（8月初旬3日間）。",
+    description: "税務代理・申告・相談の独占国家資格（業務独占）。会計事務所・独立開業や中小企業の税務責任者向け。年1回（8月初旬3日間）の科目合格制で、最終取得まで数年かかるのが一般的。",
     schedules: [
       {
         label: "2026年（概算）",
@@ -609,7 +599,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "日本FP協会",
     officialUrl: "https://www.jafp.or.jp/exam/cfp/",
-    description: "FPの国際資格・上級。年2回（6月/11月）。",
+    description: "FP系上位の国際スキル証明資格（協会認定・名称独占に近い扱い）。富裕層向け資産設計担当やIFA志望に適する。年2回（6月/11月）、6課目合格制で全科目合格率は1割前後。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-05-10T00:00:00", examDate: "2026-06-14T00:00:00", fee: 5500 }],
   },
   {
@@ -619,8 +609,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "日本FP協会",
     officialUrl: "https://www.jafp.or.jp/aim/afpcfp/afp/",
-    description: "FP2級合格＋認定研修で取得できる協会認定資格。",
-    schedules: [{ label: "2026年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-30T00:00:00", fee: 0 }],
+    description: "FP2級合格＋認定研修で取得できる協会認定のスキル証明資格。金融・保険業の継続学習が必要な実務担当者やCFPへのステップアップ志望者向け。継続教育義務（2年で15単位）あり。",
+    schedules: [{ label: "2026年（概算・通年認定）", isYearRound: true, fee: 0 }],
   },
   {
     id: "q_shoken_analyst",
@@ -629,7 +619,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "日本証券アナリスト協会",
     officialUrl: "https://www.saa.or.jp/",
-    description: "投資分析・運用の専門資格。第1次（4月/9月）と第2次（6月）。",
+    description: "投資分析・企業評価の専門スキル証明資格（協会認定）。証券・運用会社・機関投資家・IR志望者向け。第1次（4月/9月）と第2次（6月）、講座受講＋実務3年で資格付与。",
     schedules: [{ label: "2026年9月 第1次（概算）", applicationStart: "2026-06-01T00:00:00", applicationEnd: "2026-08-01T00:00:00", examDate: "2026-09-13T00:00:00", fee: 13200 }],
   },
   {
@@ -639,8 +629,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "日本証券業協会",
     officialUrl: "https://www.jsda.or.jp/about/jishukisei/gaimuin/",
-    description: "証券会社で営業するための資格。通年CBT。",
-    schedules: [{ label: "2026年 通年CBT（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 8704 }],
+    description: "証券営業に必置（業務独占に近い）の登録資格。証券会社・銀行で全商品を扱う営業担当向け。通年CBTで合格率は概ね6〜7割、入社直後の研修取得が一般的。",
+    schedules: [{ label: "2026年 通年CBT（概算）", isYearRound: true, fee: 8704 }],
   },
   {
     id: "q_gaimuin2",
@@ -649,8 +639,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "日本証券業協会",
     officialUrl: "https://www.jsda.or.jp/about/jishukisei/gaimuin/",
-    description: "証券会社で営業するための入門資格。通年CBT。",
-    schedules: [{ label: "2026年 通年CBT（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 8704 }],
+    description: "現物株・債券中心の営業に必置の登録資格。銀行窓販や証券営業の入門ライン向け。通年CBTで合格率は概ね6〜7割、入社内定者の予習資格としても定番。",
+    schedules: [{ label: "2026年 通年CBT（概算）", isYearRound: true, fee: 8704 }],
   },
   {
     id: "q_ginko_homu2",
@@ -659,7 +649,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "経済法令研究会",
     officialUrl: "https://www.kenteishiken.gr.jp/",
-    description: "銀行員の法務知識を問う民間検定。年2回（6月/10月）。",
+    description: "銀行融資・与信に必要な法務知識を示すスキル証明型民間検定。銀行員の中堅～管理職昇進要件として利用されることが多い。年2回（6月/10月）、合格率は概ね2〜3割。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-03-15T00:00:00", applicationEnd: "2026-05-08T00:00:00", examDate: "2026-06-07T00:00:00", fee: 5500 }],
   },
   {
@@ -669,7 +659,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "大阪商工会議所",
     officialUrl: "https://www.b-accounting.jp/",
-    description: "財務諸表を読む力を問う民間検定。年2回（3月/10月）。",
+    description: "財務諸表の読み方を示すスキル証明型の民間検定。経理ではなく営業・企画・コンサル等の非経理職リスキリング向け。年2回（3月/10月）、合格率は概ね6割前後。",
     schedules: [{ label: "2026年10月（概算）", applicationStart: "2026-07-15T00:00:00", applicationEnd: "2026-09-04T00:00:00", examDate: "2026-10-18T00:00:00", fee: 4950 }],
   },
   {
@@ -679,7 +669,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "大阪商工会議所",
     officialUrl: "https://www.b-accounting.jp/",
-    description: "財務分析の実務力を問う民間検定。年2回（3月/10月）。",
+    description: "財務分析・指標活用の実務力を示すスキル証明型民間検定。経営企画・M&A・IRや管理職昇進準備向け。年2回（3月/10月）、合格率は概ね4〜5割。",
     schedules: [{ label: "2026年10月（概算）", applicationStart: "2026-07-15T00:00:00", applicationEnd: "2026-09-04T00:00:00", examDate: "2026-10-18T00:00:00", fee: 7480 }],
   },
   {
@@ -689,8 +679,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "AICPA / NASBA",
     officialUrl: "https://nasba.org/exams/cpaexam/",
-    description: "米国の公認会計士資格。日本でも受験可能。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 200000 }],
+    description: "米国の会計監査資格（米国では業務独占／日本ではスキル証明扱い）。外資系経理・監査法人海外案件・グローバル財務職志望向け。通年CBTで4科目合格制、各科目合格率は概ね5割前後。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 200000 }],
   },
   {
     id: "q_batic",
@@ -699,8 +689,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "東京商工会議所",
     officialUrl: "https://kentei.tokyo-cci.or.jp/batic/",
-    description: "英文簿記・国際会計の民間検定。通年IBT。",
-    schedules: [{ label: "2026年 通年IBT（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 5500 }],
+    description: "英文簿記・国際会計の理解を示すスキル証明型民間検定。外資系経理・USCPA前段階や海外子会社経理のリスキリング向け。通年IBTでスコア型の判定方式。",
+    schedules: [{ label: "2026年 通年IBT（概算）", isYearRound: true, fee: 5500 }],
   },
   {
     id: "q_kensetsu_keiri2",
@@ -709,7 +699,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "建設業振興基金",
     officialUrl: "https://www.keiri-kentei.jp/",
-    description: "建設業の経理を専門的に扱う民間検定。年2回（9月/3月）。",
+    description: "建設業特有の会計を示す民間検定で、公共工事の経営事項審査の加点対象（事実上の必置）。建設会社経理や入札担当者向け。年2回（9月/3月）、合格率は概ね4〜5割。",
     schedules: [{ label: "2026年9月（概算）", applicationStart: "2026-06-15T00:00:00", applicationEnd: "2026-07-31T00:00:00", examDate: "2026-09-13T00:00:00", fee: 7120 }],
   },
   {
@@ -719,7 +709,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "建設業振興基金",
     officialUrl: "https://www.keiri-kentei.jp/",
-    description: "建設業経理の最高位民間検定。年2回（9月/3月）。",
+    description: "建設業経理の最上位を示す民間検定で、経営事項審査の加点も最大級（事実上の必置）。中堅以上の建設会社の経理責任者向け。年2回（9月/3月）、3科目合格制で各2〜3割。",
     schedules: [{ label: "2026年9月（概算）", applicationStart: "2026-06-15T00:00:00", applicationEnd: "2026-07-31T00:00:00", examDate: "2026-09-13T00:00:00", fee: 8120 }],
   },
 
@@ -733,7 +723,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "士業",
     organizer: "行政書士試験研究センター",
     officialUrl: "https://gyosei-shiken.or.jp/",
-    description: "官公庁への書類作成・代理の国家資格。年1回（11月第2日曜）。",
+    description: "官公署提出書類の作成・代理の業務独占国家資格。独立開業や副業士業、社内法務リスキリング層向け。年1回（11月第2日曜）、受験者は年5万人前後で合格率は概ね10%前後。",
     schedules: [
       {
         label: "2026年（概算）",
@@ -752,7 +742,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "士業",
     organizer: "法務省",
     officialUrl: "https://www.moj.go.jp/MINJI/minji06_00029.html",
-    description: "登記・供託・訴訟書類作成の国家資格。年1回（7月第1日曜）。",
+    description: "不動産・商業登記、簡裁訴訟代理の業務独占国家資格。独立志向の士業志望や法務出身の転身組向け。年1回（7月第1日曜）、合格率は概ね4〜5%の難関試験。",
     schedules: [
       {
         label: "2026年（概算）",
@@ -770,7 +760,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "士業",
     organizer: "工業所有権審議会（特許庁）",
     officialUrl: "https://www.jpo.go.jp/news/benrishi/shiken/index.html",
-    description: "特許・商標等の知的財産権の独占国家資格。短答（5月）/論文（7月）/口述（10月）。",
+    description: "特許・商標等の出願代理を担う業務独占国家資格。理系学位を持つ知財専門職や特許事務所志望者向け。短答（5月）/論文（7月）/口述（10月）、最終合格率は概ね6〜10%。",
     schedules: [
       {
         label: "2026年 短答式（概算）",
@@ -788,7 +778,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "士業",
     organizer: "全国社会保険労務士会連合会",
     officialUrl: "https://www.sharosi-siken.or.jp/",
-    description: "労働・社会保険の専門家国家資格。年1回（8月第4日曜）。",
+    description: "労働社会保険諸法令の手続代理を担う業務独占国家資格。人事労務出身の独立志望や社内人事のリスキリング層向け。年1回（8月第4日曜）、合格率は概ね6〜7%の難関。",
     schedules: [
       {
         label: "2026年（概算）",
@@ -807,7 +797,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "士業",
     organizer: "中小企業診断協会",
     officialUrl: "https://www.j-smeca.jp/",
-    description: "経営コンサルティングの国家資格。1次（8月）/2次（10月+12月口述）。",
+    description: "経営コンサル分野で唯一の名称独占国家資格。社内人材としての経営企画・コンサル志望や副業独立志向の中堅会社員向け。1次（8月）/2次（10月+12月口述）、最終合格率は概ね4〜5%。",
     schedules: [
       {
         label: "2026年 1次試験（概算）",
@@ -832,7 +822,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "不動産",
     organizer: "不動産適正取引推進機構",
     officialUrl: "https://www.retio.or.jp/exam/",
-    description: "不動産取引の独占国家資格。年1回（10月第3日曜）。",
+    description: "重要事項説明等を独占する業務独占＋必置（事務所5人に1人）の国家資格。不動産業界志望や金融・建設での関連職向け。年1回（10月第3日曜）、受験者は年20万人規模、合格率15〜17%。",
     schedules: [
       {
         label: "2026年（概算）",
@@ -851,7 +841,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "不動産",
     organizer: "マンション管理センター",
     officialUrl: "https://www.mankan.or.jp/",
-    description: "マンション管理の専門国家資格。年1回（11月最終日曜）。",
+    description: "管理組合へのコンサルティングを担う名称独占国家資格。管理会社・不動産業の中堅実務者やマンション管理コンサル志望向け。年1回（11月最終日曜）、合格率は概ね8〜10%。",
     schedules: [
       {
         label: "2026年（概算）",
@@ -869,7 +859,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "不動産",
     organizer: "マンション管理業協会",
     officialUrl: "https://www.kanrikyo.or.jp/k_kanri/",
-    description: "マンション管理業の国家資格。年1回（12月第1日曜）。",
+    description: "マンション管理業の必置国家資格（30管理組合に1名）。管理会社勤務者やマン管とのダブル取得志望者向け。年1回（12月第1日曜）、合格率は概ね20%前後。",
     schedules: [
       {
         label: "2026年（概算）",
@@ -887,7 +877,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "不動産",
     organizer: "国土交通省",
     officialUrl: "https://www.mlit.go.jp/totikensangyo/totikensangyo_fr5_000002.html",
-    description: "不動産価値評価の独占国家資格。短答（5月）/論文（7月）。",
+    description: "不動産の鑑定評価を独占する業務独占国家資格。鑑定事務所・不動産投資ファンド・大手デベ志望者向け。短答（5月）/論文（7月）、最終合格率は概ね5%前後の最難関級。",
     schedules: [
       {
         label: "2026年 短答式（概算）",
@@ -905,7 +895,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "不動産",
     organizer: "法務省",
     officialUrl: "https://www.moj.go.jp/MINJI/minji03_00006.html",
-    description: "不動産表示登記の独占国家資格。年1回（10月）。",
+    description: "不動産の表示登記を独占する業務独占国家資格。測量・建築出身の独立志向者向け。年1回（10月）の筆記＋翌1月の口述、最終合格率は概ね9%前後。",
     schedules: [
       {
         label: "2026年（概算）",
@@ -924,7 +914,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "士業",
     organizer: "司法試験委員会（法務省）",
     officialUrl: "https://www.moj.go.jp/jinji/shihoushiken/index.html",
-    description: "司法試験の受験資格を得るための試験。短答（5月）・論文（7月）・口述（10月）。",
+    description: "ロースクールに行かずに司法試験受験資格を得るための国家試験。法曹志望の社会人・学部生のショートカット手段。短答（5月）・論文（7月）・口述（10月）、最終合格率は概ね3〜4%の最難関級。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-03-09T00:00:00", applicationEnd: "2026-04-06T00:00:00", examDate: "2026-05-17T00:00:00", fee: 17500 }],
   },
   {
@@ -934,7 +924,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "士業",
     organizer: "司法試験委員会（法務省）",
     officialUrl: "https://www.moj.go.jp/jinji/shihoushiken/index.html",
-    description: "法曹（裁判官・検察官・弁護士）になるための国家試験。年1回（7月）。",
+    description: "弁護士・裁判官・検察官になるための業務独占国家試験。法曹志望者が必ず通る関門。年1回（7月）、合格率は概ね40%前後だが、ロースクール修了or予備試験合格が受験要件。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-03-09T00:00:00", applicationEnd: "2026-04-06T00:00:00", examDate: "2026-07-15T00:00:00", fee: 28000 }],
   },
   {
@@ -944,7 +934,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "士業",
     organizer: "国土交通省",
     officialUrl: "https://www.mlit.go.jp/maritime/kaijidairishi.html",
-    description: "船員労務官・船舶登記等の海事代理国家資格。年1回（9月）。",
+    description: "船舶登記や船員労務手続代理の業務独占国家資格。海運・港湾業界出身者の独立や行政書士・海事業務との兼業向け。年1回（9月）の筆記＋12月口述、合格率は概ね4〜5割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-06-01T00:00:00", applicationEnd: "2026-07-31T00:00:00", examDate: "2026-09-25T00:00:00", fee: 6800 }],
   },
   {
@@ -954,7 +944,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "士業",
     organizer: "日本貸金業協会",
     officialUrl: "https://www.j-fsa.or.jp/chief/",
-    description: "貸金業の営業所に必置の国家資格。年1回（11月第3日曜）。",
+    description: "貸金業の営業所に必置の国家資格（50人につき1人）。消費者金融・信販・クレジット業界の若手・中堅向け。年1回（11月第3日曜）、合格率は概ね3割前後。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-07-01T00:00:00", applicationEnd: "2026-09-15T00:00:00", examDate: "2026-11-15T00:00:00", fee: 8500 }],
   },
   {
@@ -964,7 +954,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "不動産",
     organizer: "賃貸不動産経営管理士協議会",
     officialUrl: "https://www.chintaikanrishi.jp/",
-    description: "賃貸不動産管理の専門国家資格。年1回（11月第3日曜）。",
+    description: "賃貸住宅管理業者に必置の国家資格（業務管理者）。賃貸管理会社・不動産仲介の管理部門向け。年1回（11月第3日曜）、受験者は年3〜4万人規模で合格率は概ね3割前後。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-08-01T00:00:00", applicationEnd: "2026-09-30T00:00:00", examDate: "2026-11-15T00:00:00", fee: 13200 }],
   },
   {
@@ -974,7 +964,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "不動産",
     organizer: "不動産競売流通協会",
     officialUrl: "https://www.fkr.or.jp/license/",
-    description: "競売不動産取引の民間資格。年1回（12月）。",
+    description: "競売不動産取引の知識を示すスキル証明型民間資格。宅建士の上乗せ知識を求める不動産仲介・投資担当向け。年1回（12月）、合格率は概ね3割前後。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-08-01T00:00:00", applicationEnd: "2026-10-31T00:00:00", examDate: "2026-12-13T00:00:00", fee: 8800 }],
   },
   {
@@ -984,7 +974,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "不動産",
     organizer: "不動産流通推進センター",
     officialUrl: "https://www.retpc.jp/consulting_master/",
-    description: "宅建士の上位資格。不動産コンサルティング業務の認定。年1回（11月）。",
+    description: "宅建士の上位コンサル業務を示すスキル証明型認定（協会認定）。不動産ベテラン向けの差別化資格として独立・コンサル志望者向け。年1回（11月）、受験には宅建士等の保有が前提。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-08-15T00:00:00", applicationEnd: "2026-09-30T00:00:00", examDate: "2026-11-08T00:00:00", fee: 31500 }],
   },
   {
@@ -994,7 +984,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "士業",
     organizer: "国土交通省",
     officialUrl: "https://www.mlit.go.jp/maritime/kaijihosanin.html",
-    description: "海難審判の補佐人国家資格。年1回。",
+    description: "海難審判廷で受審人を補佐する業務独占国家資格。海技士・海事代理士・弁護士等の有資格者向けニッチ士業。年1回開催、受験者規模は小さい専門性の高い資格。",
     schedules: [{ label: "2026年（概算・要確認）", applicationStart: "2026-07-01T00:00:00", applicationEnd: "2026-08-31T00:00:00", examDate: "2026-10-15T00:00:00", fee: 11600 }],
   },
 
@@ -1008,7 +998,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "国際ビジネスコミュニケーション協会（IIBC）",
     officialUrl: "https://www.iibc-global.org/toeic/test/lr.html",
-    description: "英語コミュニケーション能力を測る世界的検定。日本では毎月1〜2回開催。",
+    description: "ビジネス英語の聞く・読む力をスコア（10〜990）で示すスキル証明型検定。多くの日本企業の昇進・採用基準として広く利用される。日本では毎月1〜2回開催、受験者は年200万人規模。",
     schedules: [
       {
         label: "2026年6月公開テスト（概算）",
@@ -1026,7 +1016,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "日本英語検定協会",
     officialUrl: "https://www.eiken.or.jp/eiken/",
-    description: "日本最大の英語検定。年3回（第1回:5-6月 / 第2回:10月 / 第3回:1月）。",
+    description: "4技能を測る合否型のスキル証明型検定。中高生や大学受験対策、社会人の英語学習の到達度確認に広く使われる。年3回（第1回5-6月/第2回10月/第3回1月）、受験者は年300万人超規模。",
     schedules: [
       {
         label: "2026年度 第1回（概算）",
@@ -1051,13 +1041,11 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "ETS",
     officialUrl: "https://www.ets.org/jp/toefl.html",
-    description: "海外大学留学で求められる英語試験。通年複数回開催。",
+    description: "アカデミック英語4技能をスコア（0〜120）で示すスキル証明型試験。米国・欧州大学院留学者やMBA志望向け。通年複数回開催、スコア有効期限は2年。",
     schedules: [
       {
         label: "2026年 通年（概算）",
-        applicationStart: "2026-01-01T00:00:00",
-        applicationEnd: "2026-12-15T00:00:00",
-        examDate: "2026-06-15T00:00:00",
+        isYearRound: true,
         fee: 35000,
       },
     ],
@@ -1069,7 +1057,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "British Council / IDP / 日本英語検定協会",
     officialUrl: "https://www.eiken.or.jp/ielts/",
-    description: "留学・移住で世界的に通用する英語試験。毎月複数回開催。",
+    description: "英語4技能をバンドスコア（0〜9）で測るスキル証明型国際試験。英・豪・加への留学・移住・就労ビザ申請者向け。毎月複数回開催、スコア有効期限は2年。",
     schedules: [
       {
         label: "2026年 月次（概算）",
@@ -1087,7 +1075,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "日本中国語検定協会",
     officialUrl: "https://www.chuken.gr.jp/",
-    description: "中国語運用能力を測る民間検定。年3回（3月/6月/11月）。",
+    description: "中国語運用能力を日本式の級制で示すスキル証明型民間検定。中国語学習者や中国関連ビジネス担当者向け。年3回（3月/6月/11月）、合格率は級により幅あり。",
     schedules: [
       {
         label: "2026年6月（概算）",
@@ -1105,7 +1093,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "HSK日本実施委員会",
     officialUrl: "https://www.hskj.jp/",
-    description: "中国政府公認の中国語検定。月複数回開催。",
+    description: "中国政府公認の中国語スキル証明型国際試験。中国留学・現地就労や中国系企業就職に標準的に使われる。月複数回開催、レベル別に1〜6級＋上位級。",
     schedules: [
       {
         label: "2026年6月（概算）",
@@ -1124,7 +1112,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "国際ビジネスコミュニケーション協会（IIBC）",
     officialUrl: "https://www.iibc-global.org/toeic/test/sw.html",
-    description: "英語の発信能力を測る試験。月1〜2回開催。",
+    description: "英語の発信4技能（話す・書く）をスコアで示すスキル証明型試験。海外駐在やグローバル職への異動希望者向け。月1〜2回開催で受験者数はL&Rより少なく中堅規模。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-05-10T00:00:00", examDate: "2026-06-21T00:00:00", fee: 10450 }],
   },
   {
@@ -1134,7 +1122,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "全国語学ビジネス観光教育協会",
     officialUrl: "https://www.zgb.gr.jp/",
-    description: "観光業務の英語力を測る民間検定。年2回（6月/10月）。",
+    description: "観光・接客場面で使う英語力を示すスキル証明型民間検定。ホテル・旅行会社・空港勤務志望者や通訳案内士の入門に。年2回（6月/10月）、合格率は概ね6〜7割。",
     schedules: [{ label: "2026年10月（概算）", applicationStart: "2026-07-01T00:00:00", applicationEnd: "2026-09-15T00:00:00", examDate: "2026-10-25T00:00:00", fee: 4800 }],
   },
   {
@@ -1144,7 +1132,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "日本英語検定協会",
     officialUrl: "https://jstc.jp/",
-    description: "科学技術系の英語力を測る民間検定。年3回（5月/7月/11月）。",
+    description: "理工系の英文ドキュメント力を示すスキル証明型民間検定。エンジニア・研究者・特許翻訳志望者向け。年3回（5月/7月/11月）、合格率は級により幅あり。",
     schedules: [{ label: "2026年11月（概算）", applicationStart: "2026-08-01T00:00:00", applicationEnd: "2026-10-15T00:00:00", examDate: "2026-11-15T00:00:00", fee: 7700 }],
   },
   {
@@ -1154,7 +1142,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "フランス語教育振興協会",
     officialUrl: "https://apefdapf.org/",
-    description: "フランス語運用能力を測る民間検定。年2回（6月/11月）。",
+    description: "フランス語の運用能力を級制で示す日本国内向けのスキル証明型民間検定。仏文専攻生や仏語ビジネス担当者向け。年2回（6月/11月）、合格率は級により幅あり。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-03-15T00:00:00", applicationEnd: "2026-05-08T00:00:00", examDate: "2026-06-21T00:00:00", fee: 6200 }],
   },
   {
@@ -1164,7 +1152,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "ドイツ語学文学振興会",
     officialUrl: "https://www.dokken.or.jp/",
-    description: "ドイツ語運用能力を測る民間検定。年2回（6月/12月）。",
+    description: "ドイツ語の運用能力を級制で示す日本国内向けのスキル証明型民間検定。独文専攻生やドイツ企業就職志望者向け。年2回（6月/12月）、合格率は級により幅あり。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-03-15T00:00:00", applicationEnd: "2026-05-13T00:00:00", examDate: "2026-06-28T00:00:00", fee: 6500 }],
   },
   {
@@ -1174,7 +1162,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "セルバンテス文化センター東京",
     officialUrl: "https://tokio.cervantes.es/jp/dele_jp.shtm",
-    description: "スペイン政府公認のスペイン語検定。年4回（4月/5月/7月/11月）。",
+    description: "スペイン政府公認のCEFR準拠スキル証明型スペイン語試験。スペイン語圏の留学・就労や国際機関志望者向け。年4回（4月/5月/7月/11月）、A1〜C2レベル別。",
     schedules: [{ label: "2026年5月（概算）", applicationStart: "2026-02-15T00:00:00", applicationEnd: "2026-03-25T00:00:00", examDate: "2026-05-16T00:00:00", fee: 11000 }],
   },
   {
@@ -1184,7 +1172,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "シエナ外国人大学",
     officialUrl: "https://cils.unistrasi.it/",
-    description: "イタリア政府公認のイタリア語検定。年4回。",
+    description: "イタリア政府公認のCEFR準拠スキル証明型イタリア語試験。イタリア大学留学・移住申請者向け。年4回開催、A1〜C2レベル別で各回受験者は比較的少人数。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-03-15T00:00:00", applicationEnd: "2026-05-10T00:00:00", examDate: "2026-06-13T00:00:00", fee: 11000 }],
   },
   {
@@ -1194,7 +1182,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "ハングル能力検定協会",
     officialUrl: "https://www.hangul.or.jp/",
-    description: "韓国語運用能力を測る民間検定。年2回（6月/11月）。",
+    description: "韓国語の運用能力を級制で示す日本国内向けのスキル証明型民間検定。韓流カルチャー学習者・韓国関連ビジネス担当者向け。年2回（6月/11月）、合格率は級により幅あり。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-03-15T00:00:00", applicationEnd: "2026-05-10T00:00:00", examDate: "2026-06-07T00:00:00", fee: 5700 }],
   },
   {
@@ -1204,7 +1192,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "韓国政府国立国際教育院",
     officialUrl: "https://www.kref.or.jp/topik",
-    description: "韓国政府公認の韓国語検定。年複数回。",
+    description: "韓国政府公認のスキル証明型韓国語試験。韓国留学・就労ビザ申請者向けに標準的に使われる。年複数回開催、初級・中級・高級の段階別認定。",
     schedules: [{ label: "2026年4月（概算）", applicationStart: "2026-02-01T00:00:00", applicationEnd: "2026-02-28T00:00:00", examDate: "2026-04-12T00:00:00", fee: 5500 }],
   },
   {
@@ -1214,7 +1202,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "ロシア語能力検定委員会",
     officialUrl: "https://www.tokyorosianngo.com/",
-    description: "ロシア語運用能力を測る民間検定。年2回（5月/10月）。",
+    description: "ロシア語の運用能力を級制で示す日本国内向けのスキル証明型民間検定。ロシア語専攻者・スラブ研究者・関連ビジネス担当向け。年2回（5月/10月）、受験者規模は小さめ。",
     schedules: [{ label: "2026年5月（概算・要確認）", applicationStart: "2026-03-01T00:00:00", applicationEnd: "2026-04-30T00:00:00", examDate: "2026-05-17T00:00:00", fee: 6000 }],
   },
   {
@@ -1224,7 +1212,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "日本タイ語検定協会",
     officialUrl: "https://www.thaigokentei.com/",
-    description: "タイ語運用能力を測る民間検定。年2回（春/秋）。",
+    description: "タイ語の運用能力を級制で示すスキル証明型民間検定。タイ駐在者・タイ語学習者・東南アジア事業担当向け。年2回（春/秋）、受験者規模は小さめのニッチな試験。",
     schedules: [{ label: "2026年（概算・要確認）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-05-31T00:00:00", examDate: "2026-06-14T00:00:00", fee: 6000 }],
   },
   {
@@ -1234,7 +1222,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "通訳技能向上センター",
     officialUrl: "https://www.cais.or.jp/tobis/",
-    description: "ビジネス通訳のスキルを測る民間検定。年2回。",
+    description: "ビジネス通訳の実技力を測るスキル証明型民間検定。社内通訳・通訳志望のフリーランス向け。年2回開催、合格レベルは1〜4級制で受験者規模はニッチ。",
     schedules: [{ label: "2026年6月（概算・要確認）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-05-15T00:00:00", examDate: "2026-06-21T00:00:00", fee: 16500 }],
   },
   {
@@ -1244,7 +1232,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "日本翻訳連盟",
     officialUrl: "https://kentei.jtf.jp/",
-    description: "実務翻訳の能力を測る民間検定。年2回（1月/7月）。",
+    description: "実務翻訳力を分野別に測るスキル証明型民間検定。フリーランス翻訳者・産業翻訳志望者の実績アピール向け。年2回（1月/7月）、1級は登録翻訳者として紹介される運用。",
     schedules: [{ label: "2026年7月（概算）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-06-30T00:00:00", examDate: "2026-07-25T00:00:00", fee: 6600 }],
   },
   {
@@ -1254,7 +1242,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "日本国際連合協会",
     officialUrl: "https://www.kokureneiken.jp/",
-    description: "国連活動・国際情勢に関する英語検定。年2回（5月/10月）。",
+    description: "国連・国際情勢の時事英語を題材にしたスキル証明型民間検定。国際機関志望・外務系・NPO・ジャーナリスト志望向け。年2回（5月/10月）、級により合格率に幅あり。",
     schedules: [{ label: "2026年10月（概算）", applicationStart: "2026-07-01T00:00:00", applicationEnd: "2026-09-25T00:00:00", examDate: "2026-10-25T00:00:00", fee: 6500 }],
   },
 
@@ -1268,7 +1256,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/kangoshi/",
-    description: "看護師の国家資格。年1回（2月中旬）。",
+    description: "業務独占の医療系国家資格（療養上の世話・診療補助）。看護師養成課程卒業者の最終関門で、看護師志望者向け。年1回（2月中旬）、新卒受験者の合格率は概ね90%超。",
     schedules: [
       {
         label: "2026年（第115回・概算）",
@@ -1286,7 +1274,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/yakuzaishi/",
-    description: "薬剤師の国家資格。年1回（2月下旬）。",
+    description: "調剤・服薬指導を独占する業務独占国家資格。6年制薬学部卒業生（薬剤師志望者）の最終関門。年1回（2月下旬）の2日間、合格率は概ね6〜7割。",
     schedules: [
       {
         label: "2026年（第111回・概算）",
@@ -1305,7 +1293,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "社会福祉振興・試験センター",
     officialUrl: "http://www.sssc.or.jp/kaigo/",
-    description: "介護福祉士の国家資格。筆記（1月）+実技（3月）。",
+    description: "介護分野唯一の名称独占国家資格。介護現場の中核人材としての地位向上やサ責・ケアマネ受験資格を狙う実務者向け。筆記（1月）+実技（3月）、合格率は概ね7割前後。",
     schedules: [
       {
         label: "2026年（第38回・概算）",
@@ -1324,7 +1312,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "社会福祉振興・試験センター",
     officialUrl: "http://www.sssc.or.jp/shakai/",
-    description: "社会福祉士の国家資格。年1回（2月）。",
+    description: "相談援助の名称独占国家資格。地域包括支援センターや病院MSW、児童相談所等の相談援助職志望者向け。年1回（2月）、合格率は概ね3割前後。",
     schedules: [
       {
         label: "2026年（第38回・概算）",
@@ -1343,7 +1331,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "日本臨床心理士資格認定協会",
     officialUrl: "http://fjcbcp.or.jp/",
-    description: "臨床心理士の民間資格。一次（10月）+二次（11月）。",
+    description: "臨床心理学の専門性を示す協会認定のスキル証明資格。スクールカウンセラーや医療領域の心理職志望者向け。指定大学院修了が要件、一次（10月）+二次（11月）、5年ごとの更新制。",
     schedules: [
       {
         label: "2026年（概算）",
@@ -1361,7 +1349,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省・文部科学省",
     officialUrl: "https://shinri-kenshu.jp/",
-    description: "心理職唯一の国家資格。年1回（3月）。",
+    description: "心理職唯一の名称独占国家資格。臨床心理士と並ぶ心理職志望者の標準資格。年1回（3月）、合格率は受験区分で幅があり概ね4〜8割、受験者は年1万人超。",
     schedules: [
       {
         label: "2026年（第9回・概算）",
@@ -1381,7 +1369,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/ishi/",
-    description: "医師の国家資格。年1回（2月上旬・2日間）。",
+    description: "医業を独占する業務独占国家資格。医学部医学科卒業生（医師志望者）の最終関門。年1回（2月上旬・2日間）、新卒受験者の合格率は概ね90%超。",
     schedules: [{ label: "2026年（第120回・概算）", applicationStart: "2025-11-04T00:00:00", applicationEnd: "2025-11-25T00:00:00", examDate: "2026-02-07T00:00:00", resultDate: "2026-03-18T00:00:00" }],
   },
   {
@@ -1391,7 +1379,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/shikaishi/",
-    description: "歯科医師の国家資格。年1回（1月下旬）。",
+    description: "歯科医業を独占する業務独占国家資格。歯学部卒業生（歯科医師志望者）の最終関門。年1回（1月下旬）、新卒受験者の合格率は概ね7〜8割。",
     schedules: [{ label: "2026年（第119回・概算）", applicationStart: "2025-11-04T00:00:00", applicationEnd: "2025-11-25T00:00:00", examDate: "2026-01-31T00:00:00", resultDate: "2026-03-16T00:00:00" }],
   },
   {
@@ -1401,7 +1389,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/hokenshi/",
-    description: "保健師の国家資格。年1回（2月）。",
+    description: "保健指導の名称独占国家資格（看護師資格との併取得が前提）。行政・産業保健で予防医療に関わりたい看護師志望者向け。年1回（2月）、新卒合格率は概ね90%超。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2025-11-04T00:00:00", applicationEnd: "2025-11-25T00:00:00", examDate: "2026-02-14T00:00:00", resultDate: "2026-03-26T00:00:00" }],
   },
   {
@@ -1411,7 +1399,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/josanshi/",
-    description: "助産師の国家資格。年1回（2月）。",
+    description: "正常分娩の介助を独占する業務独占国家資格（看護師資格との併取得が前提）。周産期医療志望の看護師向け。年1回（2月）、新卒合格率は概ね90%超。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2025-11-04T00:00:00", applicationEnd: "2025-11-25T00:00:00", examDate: "2026-02-14T00:00:00", resultDate: "2026-03-26T00:00:00" }],
   },
   {
@@ -1421,7 +1409,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/rigaku_sagyo/",
-    description: "理学療法士の国家資格。年1回（2月下旬）。",
+    description: "理学療法（運動機能回復）の名称独占国家資格。リハビリ職志望のPT養成校卒業生向け。年1回（2月下旬）、新卒合格率は概ね9割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2025-12-04T00:00:00", applicationEnd: "2025-12-19T00:00:00", examDate: "2026-02-22T00:00:00", resultDate: "2026-03-23T00:00:00" }],
   },
   {
@@ -1431,7 +1419,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/rigaku_sagyo/",
-    description: "作業療法士の国家資格。年1回（2月下旬）。",
+    description: "作業療法（生活・社会復帰支援）の名称独占国家資格。リハ職志望のOT養成校卒業生向け。年1回（2月下旬）、新卒合格率は概ね8〜9割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2025-12-04T00:00:00", applicationEnd: "2025-12-19T00:00:00", examDate: "2026-02-22T00:00:00", resultDate: "2026-03-23T00:00:00" }],
   },
   {
@@ -1441,7 +1429,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/gengochokakushi/",
-    description: "言語聴覚士の国家資格。年1回（2月）。",
+    description: "言語・聴覚・嚥下のリハビリを行う名称独占国家資格。STを志望する養成校卒業生向け。年1回（2月）、合格率は概ね7割前後。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2025-12-19T00:00:00", applicationEnd: "2026-01-08T00:00:00", examDate: "2026-02-14T00:00:00", resultDate: "2026-03-26T00:00:00" }],
   },
   {
@@ -1451,7 +1439,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/sinryouhousyasen/",
-    description: "診療放射線技師の国家資格。年1回（2月下旬）。",
+    description: "放射線照射を独占する業務独占国家資格。診療放射線技師養成校卒業生（画像診断・放射線治療担当志望者）向け。年1回（2月下旬）、新卒合格率は概ね8〜9割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2025-12-04T00:00:00", applicationEnd: "2025-12-19T00:00:00", examDate: "2026-02-22T00:00:00", resultDate: "2026-03-26T00:00:00" }],
   },
   {
@@ -1461,7 +1449,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/rinshokensa/",
-    description: "臨床検査技師の国家資格。年1回（2月）。",
+    description: "検体・生体検査を担う名称独占国家資格（一部業務独占）。検査技師志望の養成校卒業生向け。年1回（2月）、新卒合格率は概ね8〜9割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2025-12-04T00:00:00", applicationEnd: "2025-12-19T00:00:00", examDate: "2026-02-22T00:00:00", resultDate: "2026-03-26T00:00:00" }],
   },
   {
@@ -1471,7 +1459,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/rinshokogaku/",
-    description: "臨床工学技士の国家資格。年1回（3月）。",
+    description: "生命維持管理装置の操作を担う名称独占国家資格。透析・人工心肺等を扱うME機器担当志望者向け。年1回（3月）、新卒合格率は概ね8割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2025-12-19T00:00:00", applicationEnd: "2026-01-08T00:00:00", examDate: "2026-03-01T00:00:00", resultDate: "2026-03-26T00:00:00" }],
   },
   {
@@ -1481,7 +1469,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/kyukyukyumeishi/",
-    description: "救急救命士の国家資格。年1回（3月）。",
+    description: "搬送中の救急救命処置を担う業務独占国家資格。消防士や病院救命医療担当志望者向け。年1回（3月）、新卒合格率は概ね9割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2025-12-19T00:00:00", applicationEnd: "2026-01-08T00:00:00", examDate: "2026-03-08T00:00:00", resultDate: "2026-03-26T00:00:00" }],
   },
   {
@@ -1491,7 +1479,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "社会福祉振興・試験センター",
     officialUrl: "http://www.sssc.or.jp/seishin/",
-    description: "精神保健福祉士の国家資格。年1回（2月）。",
+    description: "精神障害者の社会復帰支援を担う名称独占国家資格。精神科病院や行政の相談援助職志望者向け。年1回（2月）、合格率は概ね6〜7割。",
     schedules: [{ label: "2026年（第28回・概算）", applicationStart: "2025-09-04T00:00:00", applicationEnd: "2025-10-06T00:00:00", examDate: "2026-02-01T00:00:00", resultDate: "2026-03-09T00:00:00", fee: 24140 }],
   },
   {
@@ -1501,7 +1489,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "都道府県",
     officialUrl: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000098352.html",
-    description: "一般用医薬品の販売資格。都道府県別の試験（8〜12月）。",
+    description: "第2類・第3類医薬品販売の業務独占＋必置国家資格。ドラッグストア・薬局店舗での販売職や副業希望者向け。都道府県別試験（8〜12月）、合格率は概ね4〜5割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-05-01T00:00:00", applicationEnd: "2026-06-30T00:00:00", examDate: "2026-09-13T00:00:00", fee: 13600 }],
   },
   {
@@ -1511,7 +1499,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/kanriei/",
-    description: "管理栄養士の国家資格。年1回（3月）。",
+    description: "栄養指導の名称独占国家資格（一定規模施設で必置）。病院・保健所・給食施設志望者向け。年1回（3月）、新卒合格率は概ね9割超、既卒合格率は2割前後。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2025-11-04T00:00:00", applicationEnd: "2025-11-25T00:00:00", examDate: "2026-03-08T00:00:00", resultDate: "2026-03-25T00:00:00" }],
   },
   {
@@ -1521,7 +1509,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "全国保育士養成協議会",
     officialUrl: "https://www.hoyokyo.or.jp/exam/",
-    description: "保育士の国家資格。年2回（前期4月/後期10月）。",
+    description: "保育園で必置の名称独占国家資格。社会人からの保育職リスキリングや養成校に行かずに資格を狙う独学組向け。年2回（前期4月/後期10月）、合格率は概ね2割前後。",
     schedules: [{ label: "2026年前期 筆記（概算）", applicationStart: "2026-01-13T00:00:00", applicationEnd: "2026-02-04T00:00:00", examDate: "2026-04-19T00:00:00", fee: 12950 }],
   },
   {
@@ -1531,7 +1519,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "歯科医療振興財団",
     officialUrl: "https://www.dc-training.or.jp/",
-    description: "歯科衛生士の国家資格。年1回（3月）。",
+    description: "歯科予防処置・保健指導の業務独占国家資格。歯科医院での専門職志望者向け。年1回（3月）、新卒合格率は概ね9割超で就職率の高い職種。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2025-12-04T00:00:00", applicationEnd: "2025-12-19T00:00:00", examDate: "2026-03-01T00:00:00", resultDate: "2026-03-26T00:00:00" }],
   },
 
@@ -1545,7 +1533,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "東京商工会議所",
     officialUrl: "https://kentei.tokyo-cci.or.jp/houmu/",
-    description: "ビジネスの法律知識を問う民間検定。年2回（6-7月/10-12月）。",
+    description: "契約・労務・コンプライアンスの実務法務知識を示すスキル証明型民間検定。法務部門の若手・営業企画・人事のリスキリング向け。年2回（6-7月/10-12月）のIBT/CBT、合格率は級により幅あり。",
     schedules: [
       {
         label: "2026年6月IBT/CBT期（概算）",
@@ -1563,7 +1551,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "全日本情報学習振興協会",
     officialUrl: "https://www.joho-gakushu.or.jp/piip/",
-    description: "個人情報保護法・マイナンバー法の専門民間資格。年4回。",
+    description: "個人情報保護法・マイナンバー法の実務知識を示すスキル証明型民間資格。情シス・法務・コンプラ担当のリスキリング向け。年4回開催、合格率は概ね3〜4割。",
     schedules: [
       {
         label: "2026年6月（概算）",
@@ -1581,7 +1569,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "知的財産教育協会",
     officialUrl: "https://www.kentei-info-ip-edu.org/",
-    description: "知的財産管理の国家技能検定。年3回（3月/7月/11月）。",
+    description: "企業内での知的財産管理スキルを示す名称独占の国家技能検定。研究開発・商品企画・知財部のリスキリングや弁理士補完向け。年3回（3月/7月/11月）、合格率は級により幅あり。",
     schedules: [
       {
         label: "2026年7月（概算）",
@@ -1599,7 +1587,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "安全衛生技術試験協会",
     officialUrl: "https://www.exam.or.jp/",
-    description: "労働安全衛生の国家資格。月数回開催。",
+    description: "50人以上の事業場で必置の国家資格（業種制限なし）。製造・建設・人事総務など全業種の管理職・労務担当者向け。月数回開催、合格率は概ね4〜5割。",
     schedules: [
       {
         label: "2026年6月（概算）",
@@ -1617,7 +1605,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "大阪商工会議所",
     officialUrl: "https://www.mental-health.ne.jp/",
-    description: "職場のメンタルヘルス知識を問う民間検定。年2回（3月/11月）。",
+    description: "職場メンタルヘルス対策の知識を示すスキル証明型民間検定（I種・II種・III種）。人事・労務・産業保健スタッフや管理職のリスキリング向け。年2回（3月/11月）、級により合格率に幅あり。",
     schedules: [
       {
         label: "2026年11月（概算）",
@@ -1636,7 +1624,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "厚生労働省",
     officialUrl: "https://www.career-shiken.org/",
-    description: "キャリア形成支援の国家資格。年3回（3月/7月/11月）。",
+    description: "キャリア相談・支援の名称独占国家資格。人事・教育機関・ハローワーク・人材紹介での相談員志望者向け。指定講習修了が要件、年3回（3月/7月/11月）、合格率は学科・実技とも5〜6割程度。",
     schedules: [{ label: "2026年7月（概算）", applicationStart: "2026-04-15T00:00:00", applicationEnd: "2026-05-31T00:00:00", examDate: "2026-07-04T00:00:00", fee: 38800 }],
   },
   {
@@ -1646,7 +1634,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "日本産業カウンセラー協会",
     officialUrl: "https://www.counselor.or.jp/",
-    description: "職場のメンタルヘルス支援の民間資格。年2回（1月/7月）。",
+    description: "職場メンタルヘルス・キャリア支援を担う協会認定のスキル証明資格。社内相談員・EAP担当志望者向け。指定養成講座修了が要件、年2回（1月/7月）、合格率は概ね6割前後。",
     schedules: [{ label: "2026年7月（概算）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-05-31T00:00:00", examDate: "2026-07-19T00:00:00", fee: 30900 }],
   },
   {
@@ -1656,7 +1644,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "大阪商工会議所",
     officialUrl: "https://www.mental-health.ne.jp/",
-    description: "ラインケア（管理職向け）の民間検定。年2回（3月/11月）。",
+    description: "ラインケア（部下の不調への対応）を示すスキル証明型民間検定。中間管理職・チームリーダー向け。年2回（3月/11月）、合格率は概ね5〜6割。",
     schedules: [{ label: "2026年11月（概算）", applicationStart: "2026-08-25T00:00:00", applicationEnd: "2026-09-25T00:00:00", examDate: "2026-11-01T00:00:00", fee: 7480 }],
   },
   {
@@ -1666,7 +1654,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "大阪商工会議所",
     officialUrl: "https://www.mental-health.ne.jp/",
-    description: "セルフケアの民間検定。年2回（3月/11月）。",
+    description: "セルフケアの基本知識を示すスキル証明型民間検定。一般社員向けの入門級。年2回（3月/11月）、合格率は概ね7〜8割と取り組みやすい。",
     schedules: [{ label: "2026年11月（概算）", applicationStart: "2026-08-25T00:00:00", applicationEnd: "2026-09-25T00:00:00", examDate: "2026-11-01T00:00:00", fee: 5280 }],
   },
   {
@@ -1676,7 +1664,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "安全衛生技術試験協会",
     officialUrl: "https://www.exam.or.jp/",
-    description: "労働安全衛生の国家資格（非有害業務向け）。月数回開催。",
+    description: "有害業務を除く事業場で必置の国家資格。情報通信業・商社・小売など非有害業種の人事総務担当者向け。月数回開催、合格率は概ね5割前後。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-04-15T00:00:00", applicationEnd: "2026-05-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 8800 }],
   },
   {
@@ -1686,8 +1674,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "PMI (Project Management Institute)",
     officialUrl: "https://www.pmi-japan.org/pmp_license/",
-    description: "プロジェクトマネジメントの国際認定。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 555 }],
+    description: "プロジェクトマネジメントの国際的なスキル証明資格。外資系・グローバルPM・コンサル志望者向け。35時間の研修＋実務経験要件、通年CBT、3年で60PDU取得が必要な更新制。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 555 }],
   },
   {
     id: "q_itc",
@@ -1696,7 +1684,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "ITコーディネータ協会",
     officialUrl: "https://www.itc.or.jp/",
-    description: "経営とITをつなぐ専門家の民間資格。年2回。",
+    description: "経営とITをつなぐコンサル人材を示すスキル証明型民間資格（協会認定）。中小企業診断士と並ぶ経営IT助言役で、IT営業や社内SEのキャリアアップ向け。年2回試験＋ケース研修、更新制。",
     schedules: [{ label: "2026年8月（概算）", applicationStart: "2026-05-01T00:00:00", applicationEnd: "2026-07-15T00:00:00", examDate: "2026-08-22T00:00:00", fee: 22000 }],
   },
   {
@@ -1706,7 +1694,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "日弁連法務研究財団",
     officialUrl: "https://www.houken.gr.jp/",
-    description: "法律の中級レベル知識を問う民間検定。年1回（11月）。",
+    description: "法学部生・社会人の中級法律知識を示すスキル証明型民間検定。法務志望の学生や公務員試験併願者向け。年1回（11月）、受験者規模はやや小さめで合格率は概ね5〜6割。",
     schedules: [{ label: "2026年11月（概算）", applicationStart: "2026-08-01T00:00:00", applicationEnd: "2026-09-30T00:00:00", examDate: "2026-11-29T00:00:00", fee: 6600 }],
   },
   {
@@ -1716,7 +1704,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "サーティファイ コンプライアンス検定委員会",
     officialUrl: "https://www.sikaku.gr.jp/c/index.html",
-    description: "企業コンプライアンスを問う民間検定。年複数回。",
+    description: "企業コンプライアンスの基礎知識を示すスキル証明型民間検定。法務・コンプラ部門の若手や全社員向け研修補完に。年複数回開催、合格率は概ね6〜7割。",
     schedules: [{ label: "2026年7月（概算）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-06-15T00:00:00", examDate: "2026-07-19T00:00:00", fee: 5500 }],
   },
   {
@@ -1726,8 +1714,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "東京商工会議所",
     officialUrl: "https://kenko-keiei.jp/",
-    description: "健康経営の推進担当者向け民間資格。通年eラーニング。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 8800 }],
+    description: "健康経営推進担当者を示すスキル証明型民間資格。人事・総務・産業保健スタッフや経営企画のリスキリング向け。通年eラーニング＋効果測定で取得可能、有効期限は3年。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 8800 }],
   },
   {
     id: "q_kojin_houmu",
@@ -1736,7 +1724,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "全日本情報学習振興協会",
     officialUrl: "https://www.joho-gakushu.or.jp/p-hou-mu/",
-    description: "個人情報保護法の実務知識を問う民間検定。年4回。",
+    description: "改正個人情報保護法の実務対応力を示すスキル証明型民間検定。データ取扱業務の法務・コンプラ・情シス担当向け。年4回開催、合格率は概ね3〜4割。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-03-01T00:00:00", applicationEnd: "2026-05-20T00:00:00", examDate: "2026-06-14T00:00:00", fee: 11000 }],
   },
   {
@@ -1746,7 +1734,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "全日本情報学習振興協会",
     officialUrl: "https://www.joho-gakushu.or.jp/mn/",
-    description: "マイナンバー実務を問う民間検定。年複数回。",
+    description: "マイナンバー制度の実務を示すスキル証明型民間検定。給与・税務・人事・社労士業務の担当者向け。年複数回開催、級により受験者規模・合格率に幅あり。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-03-01T00:00:00", applicationEnd: "2026-05-20T00:00:00", examDate: "2026-06-14T00:00:00", fee: 8800 }],
   },
   {
@@ -1756,7 +1744,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "中央職業能力開発協会（JAVADA）",
     officialUrl: "https://www.javada.or.jp/jigyou/gakkari/business/",
-    description: "人事・労務分野の事務知識を問う民間検定。年2回（10月/2月）。",
+    description: "厚労省所管の職業能力評価基準に基づく人事・人材開発分野のスキル証明型公的検定。人事担当者の体系学習や社内昇格判定向け。年2回（10月/2月）、合格率は概ね5割前後。",
     schedules: [{ label: "2026年10月（概算）", applicationStart: "2026-07-01T00:00:00", applicationEnd: "2026-09-15T00:00:00", examDate: "2026-10-04T00:00:00", fee: 7700 }],
   },
   {
@@ -1766,7 +1754,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "全日本情報学習振興協会",
     officialUrl: "https://www.joho-gakushu.or.jp/copyright/",
-    description: "著作権法の実務知識を問う民間検定。年複数回。",
+    description: "著作権法の実務知識を示すスキル証明型民間検定。出版・教育・コンテンツ制作・SNS運用担当者のリスキリング向け。年複数回開催、合格率は概ね4〜5割。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-03-01T00:00:00", applicationEnd: "2026-05-20T00:00:00", examDate: "2026-06-14T00:00:00", fee: 11000 }],
   },
   {
@@ -1776,8 +1764,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "日本ストレスチェック協会",
     officialUrl: "https://stresscheck-japan.com/",
-    description: "ストレスチェック制度の実施者養成資格。通年講習。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 25300 }],
+    description: "労働安全衛生法上のストレスチェック実施者となるための研修系民間資格。看護師・保健師等の有資格者が産業保健業務で担う前提の知識補完向け。通年講習で取得可能。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 25300 }],
   },
 
   // =========================================================================
@@ -1790,7 +1778,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "安全・防災",
     organizer: "消防試験研究センター",
     officialUrl: "https://www.shoubo-shiken.or.jp/",
-    description: "ガソリン等の取扱に必要な国家資格。月数回開催。",
+    description: "ガソリン・軽油・灯油等の引火性液体の取扱・保安監督に必置の国家資格。ガソリンスタンド店長・タンクローリー運転手・製造業の保安担当者向け。月数回開催、合格率は概ね3〜4割。",
     schedules: [
       {
         label: "2026年6月（概算）",
@@ -1808,7 +1796,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "電気・通信",
     organizer: "電気技術者試験センター",
     officialUrl: "https://www.shiken.or.jp/",
-    description: "一般用電気工作物の工事に必要な国家資格。年2回（上期/下期）。",
+    description: "一般住宅・店舗の電気工事を担う業務独占国家資格。建設・設備業界転職組や副業大工・DIY実務志望者向け。年2回（上期/下期）、学科＋技能で受験者は年14万人規模、合格率は概ね6割前後。",
     schedules: [
       {
         label: "2026年上期 学科（概算）",
@@ -1833,7 +1821,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "物流・貿易",
     organizer: "税関（財務省）",
     officialUrl: "https://www.customs.go.jp/tsukanshi/",
-    description: "貿易・通関業務の独占国家資格。年1回（10月）。",
+    description: "通関業者で必置（営業所単位）の業務独占国家資格。物流・フォワーダー・商社の貿易事務志望者向け。年1回（10月）、受験者は年7000人規模で合格率は概ね15%前後。",
     schedules: [
       {
         label: "2026年（第60回・概算）",
@@ -1852,7 +1840,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "観光・サービス",
     organizer: "観光庁 / JNTO",
     officialUrl: "https://www.jnto.go.jp/jpn/projects/visitor_support/interpreter_guide_exams/",
-    description: "外国人観光客の通訳ガイドの独占国家資格。年1回。",
+    description: "報酬を得て外国語で観光案内を行う名称独占の国家資格。インバウンドガイド・通訳志望のフリーランス向け。年1回（一次8月/二次12月）、合格率は概ね1〜2割の難関。",
     schedules: [
       {
         label: "2026年（概算）",
@@ -1871,7 +1859,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "観光・サービス",
     organizer: "全国旅行業協会（ANTA）",
     officialUrl: "https://www.anta.or.jp/exam/kokunai/",
-    description: "国内旅行業の専門国家資格。年1回（9月）。",
+    description: "旅行業の営業所に必置の国家資格（国内のみ取扱）。旅行会社・旅行販売店勤務者向け。年1回（9月）、合格率は概ね3割前後。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-06-01T00:00:00", applicationEnd: "2026-07-15T00:00:00", examDate: "2026-09-06T00:00:00", fee: 5800 }],
   },
   {
@@ -1881,7 +1869,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "観光・サービス",
     organizer: "日本旅行業協会（JATA）",
     officialUrl: "https://www.jata-net.or.jp/membership/shikaku/",
-    description: "総合旅行業の専門国家資格。年1回（10月）。",
+    description: "海外旅行を含む旅行業の営業所に必置の国家資格（最上位）。総合旅行会社・OTA勤務者の昇進要件向け。年1回（10月）、合格率は概ね1〜2割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-06-15T00:00:00", applicationEnd: "2026-07-31T00:00:00", examDate: "2026-10-11T00:00:00", fee: 6500 }],
   },
   {
@@ -1891,7 +1879,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "機械・運転",
     organizer: "運行管理者試験センター",
     officialUrl: "https://www.unkan.or.jp/",
-    description: "貨物自動車運送事業の運行管理国家資格。年2回（8月/3月）。",
+    description: "貨物自動車運送事業の営業所に必置の国家資格。物流・運送会社の中間管理職や独立志望者向け。年2回（8月/3月）のCBT、合格率は概ね3割前後。",
     schedules: [{ label: "2026年8月（概算）", applicationStart: "2026-05-15T00:00:00", applicationEnd: "2026-06-30T00:00:00", examDate: "2026-08-22T00:00:00", fee: 6000 }],
   },
   {
@@ -1901,8 +1889,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "機械・運転",
     organizer: "各都道府県労働局登録教習機関",
     officialUrl: "https://www.mhlw.go.jp/bunya/roudoukijun/anzeneisei36/",
-    description: "1トン以上のフォークリフト運転に必要な技能講習。通年。",
-    schedules: [{ label: "2026年 通年講習（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 40000 }],
+    description: "1トン以上のフォークリフト運転に必須の業務独占技能講習修了資格。倉庫・物流・工場勤務志望者向け。通年開催で講習＋実技を受ければほぼ取得可能、未経験者は約35時間。",
+    schedules: [{ label: "2026年 通年講習（概算）", isYearRound: true, fee: 40000 }],
   },
   {
     id: "q_crane",
@@ -1911,7 +1899,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "機械・運転",
     organizer: "安全衛生技術試験協会",
     officialUrl: "https://www.exam.or.jp/exmn/H_kuranusi.htm",
-    description: "5トン以上のクレーン運転の国家資格。月数回開催。",
+    description: "つり上げ荷重5トン以上の天井クレーンを運転する業務独占国家資格。製造工場・建設現場・港湾物流の作業者向け。月数回開催、学科＋実技で合格率は学科5〜6割。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-04-15T00:00:00", applicationEnd: "2026-05-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 8800 }],
   },
   {
@@ -1921,7 +1909,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "機械・運転",
     organizer: "安全衛生技術試験協会",
     officialUrl: "https://www.exam.or.jp/exmn/H_nikyu.htm",
-    description: "ボイラー取扱の国家資格。月数回開催。",
+    description: "ボイラー取扱業務を担う業務独占国家資格。ビル設備管理・工場・病院の保全担当志望者向け。月数回開催で合格率は概ね5〜6割、ビルメン4点セットの一角。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-04-15T00:00:00", applicationEnd: "2026-05-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 8800 }],
   },
   {
@@ -1931,7 +1919,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "電気・通信",
     organizer: "電気技術者試験センター",
     officialUrl: "https://www.shiken.or.jp/index.html",
-    description: "電気事業用電気工作物の主任技術者の国家資格。年2回。",
+    description: "5万V未満の事業用電気工作物に必置の国家資格。ビルメン上位・自家用受電設備担当者・電気系独立志望向け。年2回（8月/3月）、4科目合格制で合格率は概ね10%前後の難関。",
     schedules: [{ label: "2026年8月（概算）", applicationStart: "2026-05-15T00:00:00", applicationEnd: "2026-06-05T00:00:00", examDate: "2026-08-22T00:00:00", fee: 7700 }],
   },
   {
@@ -1941,7 +1929,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "電気・通信",
     organizer: "省エネルギーセンター",
     officialUrl: "https://www.eccj.or.jp/mgr1/",
-    description: "省エネルギー推進の国家資格。年1回（8月）。",
+    description: "一定規模以上のエネルギー使用工場に必置の国家資格。工場の省エネ・カーボンニュートラル推進担当者向け。年1回（8月）、合格率は概ね2〜3割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-05-15T00:00:00", applicationEnd: "2026-06-15T00:00:00", examDate: "2026-08-02T00:00:00", fee: 17000 }],
   },
   {
@@ -1951,7 +1939,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "建築・測量",
     organizer: "日本技術士会",
     officialUrl: "https://www.engineer.or.jp/c_topics/000/000028.html",
-    description: "技術士になるための一次国家試験。年1回（11月）。",
+    description: "技術士補（修習技術者）になるための一次国家試験。建設・機械・情報等の理系エンジニアで技術士志望者の登竜門。年1回（11月）、合格率は部門により概ね4〜5割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-06-15T00:00:00", applicationEnd: "2026-07-08T00:00:00", examDate: "2026-11-29T00:00:00", fee: 11000 }],
   },
   {
@@ -1961,7 +1949,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "建築・測量",
     organizer: "建築技術教育普及センター",
     officialUrl: "https://www.jaeic.or.jp/",
-    description: "建築設計・監理の最高位国家資格。学科（7月）+ 設計製図（10月）。",
+    description: "規模制限なく建築物の設計・工事監理を行える業務独占国家資格（最上位）。ゼネコン・組織設計事務所・独立建築家志望者向け。学科（7月）+設計製図（10月）、最終合格率は概ね10%前後の難関。",
     schedules: [{ label: "2026年 学科（概算）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-04-15T00:00:00", examDate: "2026-07-26T00:00:00", fee: 17000 }],
   },
   {
@@ -1971,7 +1959,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "建築・測量",
     organizer: "建築技術教育普及センター",
     officialUrl: "https://www.jaeic.or.jp/",
-    description: "中規模建築物の設計・監理の国家資格。学科（7月）+ 設計製図（9月）。",
+    description: "戸建住宅クラスの設計・工事監理を行える業務独占国家資格。住宅メーカー・工務店・リフォーム会社志望者や一級へのステップ向け。学科（7月）+設計製図（9月）、最終合格率は概ね2〜3割。",
     schedules: [{ label: "2026年 学科（概算）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-04-15T00:00:00", examDate: "2026-07-05T00:00:00", fee: 18500 }],
   },
   {
@@ -1981,7 +1969,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "建築・測量",
     organizer: "国土地理院",
     officialUrl: "https://www.gsi.go.jp/LAW/SHIKEN/index.html",
-    description: "公共測量等の国家資格。年1回（5月）。",
+    description: "公共測量の計画・実施を担う業務独占国家資格。測量会社・建設コンサル・国土地理院系志望者向け。年1回（5月）、合格率は概ね1〜2割の難関。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-01-06T00:00:00", applicationEnd: "2026-01-30T00:00:00", examDate: "2026-05-17T00:00:00", fee: 4250 }],
   },
   {
@@ -1991,7 +1979,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "建築・測量",
     organizer: "国土地理院",
     officialUrl: "https://www.gsi.go.jp/LAW/SHIKEN/index.html",
-    description: "測量士補の国家資格。年1回（5月）。",
+    description: "測量士の指示で測量実務を行う業務独占国家資格。測量会社の若手や土地家屋調査士の午前試験免除狙いの受験者向け。年1回（5月）、合格率は概ね3〜4割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-01-06T00:00:00", applicationEnd: "2026-01-30T00:00:00", examDate: "2026-05-17T00:00:00", fee: 2850 }],
   },
   {
@@ -2001,7 +1989,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "安全・防災",
     organizer: "消防試験研究センター",
     officialUrl: "https://www.shoubo-shiken.or.jp/",
-    description: "消火器の整備に必要な国家資格。月数回開催。",
+    description: "消火器の整備・点検を行う業務独占国家資格。ビル設備管理・消防設備会社志望者向けで電工2種と組み合わせた取得が一般的。月数回開催、合格率は概ね4割前後。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-04-15T00:00:00", applicationEnd: "2026-05-15T00:00:00", examDate: "2026-06-21T00:00:00", fee: 3800 }],
   },
   {
@@ -2011,8 +1999,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "電気・通信",
     organizer: "日本無線協会",
     officialUrl: "https://www.nichimu.or.jp/",
-    description: "アマチュア無線局の運用に必要な国家資格。月数回CBT。",
-    schedules: [{ label: "2026年 通年CBT（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 5400 }],
+    description: "アマチュア無線局を開設・運用するための業務独占国家資格。電子工作・無線趣味やHam愛好家、防災通信に関心ある層向け。月数回CBTで合格率は概ね8割超と取り組みやすい。",
+    schedules: [{ label: "2026年 通年CBT（概算）", isYearRound: true, fee: 5400 }],
   },
   {
     id: "q_seibi2",
@@ -2021,7 +2009,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "機械・運転",
     organizer: "日本自動車整備振興会連合会",
     officialUrl: "https://www.jaspa.or.jp/exam/",
-    description: "自動車整備の国家資格。年2回（3月/10月）。",
+    description: "整備事業場の主任技術者にもなれる業務独占国家資格。ディーラー・整備工場のメカニックや独立志望者向け。年2回（3月/10月）、新卒合格率は概ね9割。",
     schedules: [{ label: "2026年10月（概算）", applicationStart: "2026-07-15T00:00:00", applicationEnd: "2026-08-31T00:00:00", examDate: "2026-10-04T00:00:00", fee: 7200 }],
   },
 
@@ -2033,7 +2021,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "不動産",
     organizer: "全国住宅ローン救済支援機構",
     officialUrl: "https://www.jhsa-net.jp/",
-    description: "住宅ローン破綻者の任意売却を扱う民間資格。年1回。",
+    description: "住宅ローン破綻者の任意売却の専門知識を示すスキル証明型民間資格。宅建士保有者の差別化や任意売却ビジネス志望者向け。年1回開催、受験者規模はニッチ。",
     schedules: [{ label: "2026年（概算・要確認）", applicationStart: "2026-08-01T00:00:00", applicationEnd: "2026-10-31T00:00:00", examDate: "2026-12-06T00:00:00", fee: 8800 }],
   },
   {
@@ -2043,7 +2031,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "不動産",
     organizer: "マンション管理業協会",
     officialUrl: "https://www.kanrikyo.or.jp/",
-    description: "区分所有マンション管理の民間資格。年1回。",
+    description: "区分所有法に基づくマンション管理を示すスキル証明型民間資格。管理会社のフロント担当者・管理組合理事向け。年1回開催、合格率は概ね5割前後。",
     schedules: [{ label: "2026年（概算・要確認）", applicationStart: "2026-08-01T00:00:00", applicationEnd: "2026-09-30T00:00:00", examDate: "2026-11-15T00:00:00", fee: 11000 }],
   },
   {
@@ -2053,7 +2041,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "不動産",
     organizer: "マンション管理業協会",
     officialUrl: "https://www.kanrikyo.or.jp/k_iji/",
-    description: "マンションの建物・設備維持の技術系民間資格。年1回（12月）。",
+    description: "大規模修繕・維持管理の技術知識を示すスキル証明型民間資格。管理会社の技術担当・設計事務所・修繕コンサル志望者向け。年1回（12月）、合格率は概ね3割前後。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-08-01T00:00:00", applicationEnd: "2026-09-30T00:00:00", examDate: "2026-12-06T00:00:00", fee: 11000 }],
   },
 
@@ -2065,7 +2053,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "建築・測量",
     organizer: "建築技術教育普及センター",
     officialUrl: "https://www.jaeic.or.jp/shiken/bsm/",
-    description: "建築設備設計の助言・指導の国家資格。年1回。",
+    description: "建築設備の設計・工事監理に助言できる名称独占国家資格。設備設計事務所・ゼネコン設備担当向けで一級建築士受験資格にも繋がる。年1回開催、最終合格率は概ね2割前後。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-03-01T00:00:00", applicationEnd: "2026-04-15T00:00:00", examDate: "2026-06-21T00:00:00", fee: 36300 }],
   },
   {
@@ -2075,7 +2063,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "建築・測量",
     organizer: "建設業振興基金",
     officialUrl: "https://www.fcip-shiken.jp/",
-    description: "建築施工管理の国家資格・最上位。年1回。",
+    description: "建設業の専任技術者・監理技術者になれる必置の国家資格（建築工事）。大手ゼネコン中堅以上の現場代理人向け。年1回開催、最終合格率は概ね2〜3割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-02-01T00:00:00", applicationEnd: "2026-03-15T00:00:00", examDate: "2026-06-14T00:00:00", fee: 10800 }],
   },
   {
@@ -2085,7 +2073,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "建築・測量",
     organizer: "建設業振興基金",
     officialUrl: "https://www.fcip-shiken.jp/",
-    description: "建築施工管理の国家資格。年2回。",
+    description: "中小建築工事の主任技術者になれる必置の国家資格。中小建設会社の現場担当者・施工管理職若手向け。年2回開催、合格率は概ね3〜4割。",
     schedules: [{ label: "2026年前期（概算）", applicationStart: "2026-02-01T00:00:00", applicationEnd: "2026-03-15T00:00:00", examDate: "2026-06-14T00:00:00", fee: 10800 }],
   },
   {
@@ -2095,7 +2083,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "建築・測量",
     organizer: "全国建設研修センター",
     officialUrl: "https://www.jctc.jp/",
-    description: "土木施工管理の国家資格・最上位。年1回。",
+    description: "公共土木工事の監理技術者になれる必置の国家資格。総合建設業の土木部門中堅・現場所長クラス向け。年1回開催、最終合格率は概ね3割前後。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-03-01T00:00:00", applicationEnd: "2026-04-15T00:00:00", examDate: "2026-07-05T00:00:00", fee: 10500 }],
   },
   {
@@ -2105,7 +2093,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "建築・測量",
     organizer: "インテリア産業協会",
     officialUrl: "https://www.interior.or.jp/examination/",
-    description: "住空間インテリアの民間資格。年1回。",
+    description: "住宅インテリアの提案力を示すスキル証明型民間資格（協会認定）。住宅メーカー・家具販売・リフォーム業のスタッフや独立志望者向け。年1回開催、最終合格率は概ね2〜3割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-07-15T00:00:00", applicationEnd: "2026-08-25T00:00:00", examDate: "2026-10-11T00:00:00", fee: 14850 }],
   },
   {
@@ -2115,8 +2103,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "建築・測量",
     organizer: "コンピュータ教育振興協会（ACSP）",
     officialUrl: "https://www.acsp.jp/cad/",
-    description: "CAD操作の民間検定。通年CBT。",
-    schedules: [{ label: "2026年 通年CBT（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 5500 }],
+    description: "CADソフトの基本操作と製図知識を示すスキル証明型民間検定。建築・機械系の若手やCADオペレーター転職組向け。通年CBT、合格率は概ね5割前後。",
+    schedules: [{ label: "2026年 通年CBT（概算）", isYearRound: true, fee: 5500 }],
   },
   {
     id: "q_zoen_2",
@@ -2125,7 +2113,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "建築・測量",
     organizer: "全国建設研修センター",
     officialUrl: "https://www.jctc.jp/",
-    description: "造園工事施工管理の国家資格。年1回。",
+    description: "造園工事の主任技術者になれる必置の国家資格。造園会社・植栽工事業の現場担当者向け。年1回開催、合格率は概ね3〜4割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-02-01T00:00:00", applicationEnd: "2026-03-15T00:00:00", examDate: "2026-09-13T00:00:00", fee: 10500 }],
   },
   {
@@ -2135,7 +2123,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "建築・測量",
     organizer: "東京商工会議所",
     officialUrl: "https://www.kentei.org/fukushi/",
-    description: "高齢者・障害者のための住環境提案の民間検定。年2回。",
+    description: "高齢者・障害者向け住環境提案のスキル証明型民間検定。介護リフォーム・住宅改修担当者やケアマネ・建築士の付加価値向け。年2回開催、合格率は概ね4割前後。",
     schedules: [{ label: "2026年7月（概算）", applicationStart: "2026-04-15T00:00:00", applicationEnd: "2026-06-19T00:00:00", examDate: "2026-07-19T00:00:00", fee: 5500 }],
   },
 
@@ -2147,7 +2135,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "電気・通信",
     organizer: "電気技術者試験センター",
     officialUrl: "https://www.shiken.or.jp/",
-    description: "自家用電気工作物の工事の国家資格。年1回。",
+    description: "最大電力500kW未満の自家用電気工作物の工事を担う業務独占国家資格。電気工事業の中堅・施工管理志望者向け。年1回開催、学科＋技能で実務経験要件あり、最終合格率は概ね4割。",
     schedules: [{ label: "2026年 学科（概算）", applicationStart: "2026-06-15T00:00:00", applicationEnd: "2026-07-05T00:00:00", examDate: "2026-10-04T00:00:00", fee: 10900 }],
   },
   {
@@ -2157,7 +2145,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "電気・通信",
     organizer: "電気技術者試験センター",
     officialUrl: "https://www.shiken.or.jp/",
-    description: "事業用電気工作物の主任技術者の国家資格。年1回。",
+    description: "17万V未満の事業用電気工作物に必置の国家資格。電力会社・大規模工場・発電所の主任技術者志望向け。年1回開催（一次/二次）、合格率は概ね5%前後の難関。",
     schedules: [{ label: "2026年 一次（概算）", applicationStart: "2026-05-15T00:00:00", applicationEnd: "2026-06-05T00:00:00", examDate: "2026-08-22T00:00:00", fee: 13800 }],
   },
   {
@@ -2167,7 +2155,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "電気・通信",
     organizer: "日本データ通信協会",
     officialUrl: "https://www.dekyo.or.jp/shiken/",
-    description: "デジタル通信回線工事の国家資格。年2回（5月/11月）。",
+    description: "事業者通信回線に端末設備を接続する工事の業務独占国家資格（入門級）。通信工事業の若手やインフラエンジニアのリスキリング向け。年2回（5月/11月）、合格率は概ね4割前後。",
     schedules: [{ label: "2026年5月（概算）", applicationStart: "2026-02-01T00:00:00", applicationEnd: "2026-03-15T00:00:00", examDate: "2026-05-24T00:00:00", fee: 8700 }],
   },
   {
@@ -2177,8 +2165,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "電気・通信",
     organizer: "日本無線協会",
     officialUrl: "https://www.nichimu.or.jp/",
-    description: "陸上特殊無線業務の国家資格。年複数回CBT。",
-    schedules: [{ label: "2026年 通年CBT（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 6363 }],
+    description: "陸上の多重無線設備の操作・点検に必置の業務独占国家資格。携帯基地局・放送中継局・通信会社の保守技術者向け。年複数回CBT、合格率は概ね2〜3割。",
+    schedules: [{ label: "2026年 通年CBT（概算）", isYearRound: true, fee: 6363 }],
   },
   {
     id: "q_kaijou_toku",
@@ -2187,8 +2175,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "電気・通信",
     organizer: "日本無線協会",
     officialUrl: "https://www.nichimu.or.jp/",
-    description: "船舶通信用無線業務の国家資格。年複数回CBT。",
-    schedules: [{ label: "2026年 通年CBT（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 6363 }],
+    description: "国際航海船舶の海上無線通信に必要な業務独占国家資格。船員・海運会社・海上保安官志望向け。年複数回CBT、合格率は概ね5〜6割。",
+    schedules: [{ label: "2026年 通年CBT（概算）", isYearRound: true, fee: 6363 }],
   },
   {
     id: "q_kouku_toku",
@@ -2197,7 +2185,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "電気・通信",
     organizer: "日本無線協会",
     officialUrl: "https://www.nichimu.or.jp/",
-    description: "航空局通信用無線業務の国家資格。年複数回。",
+    description: "航空機・航空局の無線通信に必要な業務独占国家資格。自家用パイロット・グライダー・ドローン業務関係者向け。年複数回開催、合格率は概ね6〜7割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-05-31T00:00:00", examDate: "2026-06-15T00:00:00", fee: 6363 }],
   },
 
@@ -2209,8 +2197,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "機械・運転",
     organizer: "各都道府県労働局登録教習機関",
     officialUrl: "https://www.mhlw.go.jp/bunya/roudoukijun/anzeneisei36/",
-    description: "1トン以上のクレーン玉掛け作業の技能講習。通年。",
-    schedules: [{ label: "2026年 通年講習（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 20000 }],
+    description: "1トン以上のクレーン荷掛け作業を担う業務独占の技能講習修了資格。建設・製造・物流現場の作業者向け。通年実施で講習＋修了試験を受ければほぼ取得可能。",
+    schedules: [{ label: "2026年 通年講習（概算）", isYearRound: true, fee: 20000 }],
   },
   {
     id: "q_gas_yousetsu",
@@ -2219,8 +2207,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "機械・運転",
     organizer: "各都道府県労働局登録教習機関",
     officialUrl: "https://www.mhlw.go.jp/bunya/roudoukijun/anzeneisei36/",
-    description: "可燃性ガスを使った溶接の技能講習。通年。",
-    schedules: [{ label: "2026年 通年講習（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 18000 }],
+    description: "可燃性ガス・酸素を用いた溶接・溶断業務に必須の業務独占技能講習修了資格。建設・金属加工・配管工事の作業者向け。通年実施で講習＋修了試験で取得可能。",
+    schedules: [{ label: "2026年 通年講習（概算）", isYearRound: true, fee: 18000 }],
   },
   {
     id: "q_arc_yousetsu",
@@ -2229,8 +2217,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "機械・運転",
     organizer: "各都道府県労働局登録教習機関",
     officialUrl: "https://www.mhlw.go.jp/bunya/roudoukijun/anzeneisei36/",
-    description: "アーク溶接装置を使った作業の特別教育。通年。",
-    schedules: [{ label: "2026年 通年講習（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 15000 }],
+    description: "アーク溶接機を用いる業務に必須の業務独占特別教育修了資格。製造業・自動車整備・建設の現場作業者向け。通年実施・約21時間の講習で取得可能。",
+    schedules: [{ label: "2026年 通年講習（概算）", isYearRound: true, fee: 15000 }],
   },
   {
     id: "q_seibi3",
@@ -2239,7 +2227,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "機械・運転",
     organizer: "日本自動車整備振興会連合会",
     officialUrl: "https://www.jaspa.or.jp/exam/",
-    description: "自動車整備の国家資格・入門級。年2回。",
+    description: "自動車整備士の入門級の業務独占国家資格。整備工場での補助作業から自整士キャリアを始めたい層向け。年2回開催、合格率は概ね6〜8割。",
     schedules: [{ label: "2026年10月（概算）", applicationStart: "2026-07-15T00:00:00", applicationEnd: "2026-08-31T00:00:00", examDate: "2026-10-04T00:00:00", fee: 7200 }],
   },
   {
@@ -2249,7 +2237,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "機械・運転",
     organizer: "安全衛生技術試験協会",
     officialUrl: "https://www.exam.or.jp/",
-    description: "5トン以上の移動式クレーン運転の国家資格。月数回。",
+    description: "つり上げ荷重5トン以上のラフター・クレーン車を運転する業務独占国家資格。建設・土木現場のオペレーター向け。月数回開催、学科合格率は概ね6〜7割。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-04-15T00:00:00", applicationEnd: "2026-05-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 8800 }],
   },
 
@@ -2261,7 +2249,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "観光・サービス",
     organizer: "日本ホテル教育センター",
     officialUrl: "https://www.jhec.or.jp/",
-    description: "ホテル業務の専門知識を問う民間検定。年2回（2月/8月）。",
+    description: "ホテル業務の体系的知識を示すスキル証明型民間検定。ホテル従業員の昇進準備や観光系学生向け。年2回（2月/8月）、合格率は等級により幅あり概ね5〜7割。",
     schedules: [{ label: "2026年8月（概算）", applicationStart: "2026-05-01T00:00:00", applicationEnd: "2026-07-15T00:00:00", examDate: "2026-08-23T00:00:00", fee: 6500 }],
   },
   {
@@ -2271,7 +2259,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "観光・サービス",
     organizer: "実務技能検定協会",
     officialUrl: "https://jitsumu-kentei.jp/",
-    description: "顧客接遇スキルの民間検定。年2回（6月/11月）。",
+    description: "接客・接遇のマナーを示すスキル証明型民間検定。販売・飲食・ホテル・受付業務志望者や新人研修補完向け。年2回（6月/11月）、合格率は概ね6〜7割。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-05-20T00:00:00", examDate: "2026-06-21T00:00:00", fee: 4100 }],
   },
   {
@@ -2281,7 +2269,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "観光・サービス",
     organizer: "実務技能検定協会",
     officialUrl: "https://jitsumu-kentei.jp/",
-    description: "秘書業務に必要なビジネスマナーの民間検定。年3回。",
+    description: "ビジネスマナー・敬語・電話対応の基礎を示すスキル証明型民間検定。事務職・営業事務志望の学生や新入社員向けの定番。年3回開催、合格率は概ね5〜6割。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-05-20T00:00:00", examDate: "2026-06-21T00:00:00", fee: 4100 }],
   },
   {
@@ -2291,7 +2279,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "観光・サービス",
     organizer: "日本ソムリエ協会（JSA）",
     officialUrl: "https://www.sommelier.jp/",
-    description: "ワイン提供の民間資格。年1回（一次7-8月/二次10月）。",
+    description: "ワイン・酒類のサービスを担う協会認定のスキル証明資格。レストラン・ホテル・酒販店勤務者向けで飲食業3年以上の実務経験が要件。一次7-8月/二次10月、最終合格率は概ね3〜4割。",
     schedules: [{ label: "2026年 一次（概算）", applicationStart: "2026-03-01T00:00:00", applicationEnd: "2026-07-15T00:00:00", examDate: "2026-07-20T00:00:00", fee: 25440 }],
   },
   {
@@ -2301,8 +2289,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "観光・サービス",
     organizer: "日本酒サービス研究会・酒匠研究会連合会（SSI）",
     officialUrl: "https://ssi-w.com/",
-    description: "日本酒提供のサービス専門家民間資格。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 88800 }],
+    description: "日本酒のテイスティング・提案を担う協会認定のスキル証明資格。和食店・酒販店・酒蔵関係者やインバウンド対応志望者向け。通年受講可能で講習＋試験で取得、更新制。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 88800 }],
   },
 
   // === 安全・防災 追加分 ====================================================
@@ -2313,8 +2301,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "安全・防災",
     organizer: "日本防火・防災協会",
     officialUrl: "https://www.n-bouka.or.jp/",
-    description: "大規模建物の防火責任者になるための講習資格。通年。",
-    schedules: [{ label: "2026年 通年講習（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 7500 }],
+    description: "一定規模以上の建物の防火管理者として必置の国家資格。商業施設・オフィスビル・宿泊施設のテナント責任者や総務担当者向け。通年講習で2日間受講すれば取得可能。",
+    schedules: [{ label: "2026年 通年講習（概算）", isYearRound: true, fee: 7500 }],
   },
   {
     id: "q_bouka_taisho",
@@ -2323,7 +2311,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "安全・防災",
     organizer: "日本消防設備安全センター",
     officialUrl: "https://www.fesc.or.jp/",
-    description: "防火対象物の点検を実施できる国家資格。年複数回。",
+    description: "防火対象物の法定点検を実施できる業務独占国家資格。消防設備会社や大規模施設の防災担当者向け。年複数回開催、3日間の講習＋効果測定で取得可能。",
     schedules: [{ label: "2026年（概算・要確認）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-05-31T00:00:00", examDate: "2026-07-15T00:00:00", fee: 49500 }],
   },
   {
@@ -2333,7 +2321,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "安全・防災",
     organizer: "消防試験研究センター",
     officialUrl: "https://www.shoubo-shiken.or.jp/",
-    description: "全類危険物の取扱の国家資格。月数回。",
+    description: "第1〜6類すべての危険物取扱・保安監督を担える業務独占国家資格（最上位）。化学・石油・製薬業の保安責任者志望向け。受験には化学系学位等の要件あり、月数回開催で合格率は概ね3〜4割。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-04-15T00:00:00", applicationEnd: "2026-05-15T00:00:00", examDate: "2026-06-21T00:00:00", fee: 6800 }],
   },
   {
@@ -2343,7 +2331,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "安全・防災",
     organizer: "消防試験研究センター",
     officialUrl: "https://www.shoubo-shiken.or.jp/",
-    description: "漏電火災警報器の整備の国家資格。月数回。",
+    description: "漏電火災警報器の整備・点検を担う業務独占国家資格。電気工事士保有者の業務領域拡張やビル設備管理担当向け。月数回開催で電工有資格者は科目免除あり、合格率は概ね5〜6割。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-04-15T00:00:00", applicationEnd: "2026-05-15T00:00:00", examDate: "2026-06-21T00:00:00", fee: 3800 }],
   },
   {
@@ -2353,7 +2341,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "安全・防災",
     organizer: "安全衛生技術試験協会",
     officialUrl: "https://www.exam.or.jp/",
-    description: "労働環境の測定・評価の国家資格。年2回（2月/8月）。",
+    description: "粉じん・有機溶剤等の作業環境測定を担う業務独占国家資格。労働安全コンサル会社や製造業の衛生管理担当者向け。年2回（2月/8月）、合格率は科目により2〜5割で実務講習も必要。",
     schedules: [{ label: "2026年8月（概算）", applicationStart: "2026-05-01T00:00:00", applicationEnd: "2026-06-30T00:00:00", examDate: "2026-08-22T00:00:00", fee: 13900 }],
   },
   {
@@ -2363,8 +2351,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "安全・防災",
     organizer: "日本防災士機構",
     officialUrl: "https://bousaisi.jp/",
-    description: "災害時の防災・減災のリーダー民間資格。通年研修。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 5000 }],
+    description: "地域・職場の防災リーダーを担う協会認定のスキル証明資格。自治会・自治体職員・企業BCP担当・地域貢献志向の社会人向け。通年研修＋試験で取得可能、登録者は20万人超規模。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 5000 }],
   },
 
   // === 物流・貿易 追加分 ====================================================
@@ -2375,7 +2363,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "物流・貿易",
     organizer: "日本貿易実務検定協会",
     officialUrl: "https://www.boujitsu.com/",
-    description: "貿易実務の入門級民間検定。年5回。",
+    description: "貿易実務の基礎を示すスキル証明型民間検定（入門級）。商社・メーカー海外事業・フォワーダー事務志望者向け。年5回開催、合格率は概ね5〜6割で取り組みやすい。",
     schedules: [{ label: "2026年7月（概算）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-06-25T00:00:00", examDate: "2026-07-12T00:00:00", fee: 5500 }],
   },
   {
@@ -2385,7 +2373,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "物流・貿易",
     organizer: "日本ロジスティクスシステム協会（JILS）",
     officialUrl: "https://www.logistics.or.jp/",
-    description: "物流管理の専門民間資格。年1回。",
+    description: "物流管理の体系的知識を示すスキル証明型民間資格（協会認定）。メーカー・物流会社の物流企画・SCM担当者向け。年1回開催、講座受講＋効果測定で取得可能。",
     schedules: [{ label: "2026年（概算・要確認）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-06-30T00:00:00", examDate: "2026-09-13T00:00:00", fee: 16500 }],
   },
 
@@ -2397,7 +2385,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "CG-ARTS協会",
     officialUrl: "https://www.cgarts.or.jp/kentei/",
-    description: "Webデザインの民間検定。年2回（前期7月/後期11月）。",
+    description: "Webサイト設計・制作の知識を示すスキル証明型民間検定。Web制作会社や事業会社のWeb担当志望者向け。年2回（前期7月/後期11月）、合格率は概ね3〜4割。",
     schedules: [{ label: "2026年11月（概算）", applicationStart: "2026-08-01T00:00:00", applicationEnd: "2026-10-15T00:00:00", examDate: "2026-11-22T00:00:00", fee: 6700 }],
   },
   {
@@ -2407,7 +2395,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "CG-ARTS協会",
     officialUrl: "https://www.cgarts.or.jp/kentei/",
-    description: "CG映像のエンジニア民間検定。年2回。",
+    description: "3DCG・映像制作の技術知識を示すスキル証明型民間検定。ゲーム・映像・VFX業界のエンジニアやTA志望者向け。年2回開催、合格率は概ね3〜4割。",
     schedules: [{ label: "2026年11月（概算）", applicationStart: "2026-08-01T00:00:00", applicationEnd: "2026-10-15T00:00:00", examDate: "2026-11-22T00:00:00", fee: 6700 }],
   },
   {
@@ -2417,8 +2405,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Scrum Alliance",
     officialUrl: "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster",
-    description: "スクラムマスター国際認定。研修+試験で通年取得可能。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 165000 }],
+    description: "スクラム実践のスキル証明型国際認定。アジャイル開発のスクラムマスター・プロダクトリーダー志望者向け。2日間の認定研修＋オンライン試験で通年取得可能、2年で再認定。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 165000 }],
   },
   {
     id: "q_salesforce_admin",
@@ -2427,8 +2415,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Salesforce",
     officialUrl: "https://trailhead.salesforce.com/credentials/administrator",
-    description: "Salesforce管理者の認定資格。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 28600 }],
+    description: "Salesforceシステム管理者を示すスキル証明型ベンダー認定。SF導入企業の社内SE・営業企画・SIerのSalesforce担当者向け。通年CBT、年3回のリリースに合わせた継続学習が必要。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 28600 }],
   },
   {
     id: "q_uipath_associate",
@@ -2437,8 +2425,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "UiPath",
     officialUrl: "https://www.uipath.com/ja/learning/certification",
-    description: "RPAの基礎を問うベンダー認定。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 22000 }],
+    description: "UiPathによるRPA開発の基礎を示すスキル証明型ベンダー認定。社内業務自動化の担当者・市民開発者・RPAエンジニア志望者向け。通年CBTで合格ライン70%、2年で再認定。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 22000 }],
   },
 
   // === 医療・福祉 追加分（追い込み） ========================================
@@ -2449,7 +2437,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/shinokunrenshi/",
-    description: "視機能検査・矯正訓練の国家資格。年1回（2月）。",
+    description: "視機能検査・斜視弱視の訓練を担う名称独占国家資格。眼科クリニック・大学病院での専門職志望者向け。年1回（2月）、新卒合格率は概ね9割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2025-12-12T00:00:00", applicationEnd: "2026-01-08T00:00:00", examDate: "2026-02-22T00:00:00", resultDate: "2026-03-26T00:00:00" }],
   },
   {
@@ -2459,7 +2447,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "医療・福祉",
     organizer: "厚生労働省",
     officialUrl: "https://www.mhlw.go.jp/kouseiroudoushou/shikaku_shiken/gishisouguushi/",
-    description: "義肢・装具の製作適合の国家資格。年1回（2月）。",
+    description: "義肢・装具の採型・製作・適合を担う名称独占国家資格。リハビリ機器メーカーや専門製作所での専門職志望向け。年1回（2月）、養成校卒業生の合格率は概ね8〜9割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2025-12-12T00:00:00", applicationEnd: "2026-01-08T00:00:00", examDate: "2026-02-22T00:00:00", resultDate: "2026-03-26T00:00:00" }],
   },
 
@@ -2471,7 +2459,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "実務能力開発支援協会",
     officialUrl: "https://jitsumu-up.jp/exam/index.html",
-    description: "給与計算の実務スキル民間検定。年2回（3月/11月）。",
+    description: "給与計算の実務処理能力を示すスキル証明型民間検定。経理・人事労務担当者や社労士補助スタッフのリスキリング向け。年2回（3月/11月）、合格率は概ね7割前後。",
     schedules: [{ label: "2026年11月（概算）", applicationStart: "2026-08-01T00:00:00", applicationEnd: "2026-09-25T00:00:00", examDate: "2026-11-22T00:00:00", fee: 8800 }],
   },
   {
@@ -2481,7 +2469,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "日本経営協会",
     officialUrl: "https://www.bken.or.jp/",
-    description: "経営学知識の民間検定。年2回（6月/12月）。",
+    description: "経営学全体の体系知識を示すスキル証明型民間検定。MBA入学前の予習や中堅管理職・経営企画担当のリスキリング向け。年2回（6月/12月）、合格率は概ね3〜4割。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-04-01T00:00:00", applicationEnd: "2026-05-31T00:00:00", examDate: "2026-06-21T00:00:00", fee: 5500 }],
   },
 
@@ -2493,7 +2481,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "英語・語学",
     organizer: "日本国際教育支援協会",
     officialUrl: "https://www.jees.or.jp/jltct/",
-    description: "外国人への日本語教師の専門知識を問う民間検定。年1回（10月）。",
+    description: "日本語教師の専門知識を示すスキル証明型民間検定（国家資格化後も実務での評価軸）。海外日本語学校・国内日本語学校志望者やリスキリング層向け。年1回（10月）、合格率は概ね2〜3割。",
     schedules: [{ label: "2026年（概算）", applicationStart: "2026-06-15T00:00:00", applicationEnd: "2026-08-08T00:00:00", examDate: "2026-10-25T00:00:00", fee: 17000 }],
   },
   {
@@ -2503,8 +2491,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "PMI",
     officialUrl: "https://www.pmi.org/certifications/agile-acp",
-    description: "アジャイル開発の国際認定。通年。",
-    schedules: [{ label: "2026年 通年（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 56700 }],
+    description: "アジャイル全般（Scrum・XP・カンバン等）を横断するスキル証明型国際認定。アジャイル開発のPM・コーチ志望者やPMP保有者の補完向け。通年CBT、3年で30PDU取得の更新制。",
+    schedules: [{ label: "2026年 通年（概算）", isYearRound: true, fee: 56700 }],
   },
   {
     id: "q_adobe_cert",
@@ -2513,8 +2501,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "IT",
     organizer: "Adobe / Certiport",
     officialUrl: "https://www.adobe.com/jp/training/certification.html",
-    description: "Adobe製品（Photoshop / Illustrator 等）のスキル認定。通年CBT。",
-    schedules: [{ label: "2026年 通年CBT（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 10780 }],
+    description: "Adobe主要ソフト（Photoshop/Illustrator等）の操作力を示すスキル証明型ベンダー認定。デザイナー・クリエイティブ職志望の学生や独学組のポートフォリオ補完向け。通年CBT。",
+    schedules: [{ label: "2026年 通年CBT（概算）", isYearRound: true, fee: 10780 }],
   },
   {
     id: "q_ginko_zeimu",
@@ -2523,7 +2511,7 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "経理・財務",
     organizer: "経済法令研究会",
     officialUrl: "https://www.kenteishiken.gr.jp/",
-    description: "銀行員の税務知識を問う民間検定。年2回（6月/10月）。",
+    description: "銀行員の税務知識を示すスキル証明型民間検定。法人融資・相続・資産運用提案担当の中堅銀行員向けで昇進要件にも使われる。年2回（6月/10月）、合格率は概ね2〜3割。",
     schedules: [{ label: "2026年6月（概算）", applicationStart: "2026-03-15T00:00:00", applicationEnd: "2026-05-08T00:00:00", examDate: "2026-06-07T00:00:00", fee: 5500 }],
   },
   {
@@ -2533,8 +2521,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "法務・労務",
     organizer: "厚生労働大臣指定講習機関",
     officialUrl: "https://www.mhlw.go.jp/",
-    description: "有害業務で衛生管理を担う上位国家資格。指定講習で取得。",
-    schedules: [{ label: "2026年 講習（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 60000 }],
+    description: "粉じん・有害ガスを扱う事業場で必置の上位国家資格。化学・金属・鉱業等の労務担当者や衛生管理者からのステップアップ向け。指定講習（5日間程度）＋修了試験で取得可能。",
+    schedules: [{ label: "2026年 講習（概算）", isYearRound: true, fee: 60000 }],
   },
   {
     id: "q_barista",
@@ -2543,8 +2531,8 @@ export const QUALIFICATION_CATALOG: Qualification[] = [
     category: "観光・サービス",
     organizer: "日本バリスタ協会",
     officialUrl: "https://www.jba-jp.com/license/",
-    description: "コーヒーサービスのバリスタ民間資格。通年。",
-    schedules: [{ label: "2026年 通年講習（概算）", applicationStart: "2026-01-01T00:00:00", applicationEnd: "2026-12-15T00:00:00", examDate: "2026-06-15T00:00:00", fee: 66000 }],
+    description: "エスプレッソ抽出・ミルク技術等の基礎を示すスキル証明型民間資格（協会認定）。カフェ・コーヒースタンド勤務志望者や独立カフェ開業準備層向け。通年講習＋実技で取得可能。",
+    schedules: [{ label: "2026年 通年講習（概算）", isYearRound: true, fee: 66000 }],
   },
 ];
 

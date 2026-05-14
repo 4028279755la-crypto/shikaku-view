@@ -55,7 +55,7 @@ export function isNotificationPermitted(): boolean {
   return "Notification" in window && Notification.permission === "granted";
 }
 
-export type EventKind = "application-start" | "application-end" | "exam";
+export type EventKind = "application-start" | "application-end" | "exam" | "user-target-exam";
 
 export interface UpcomingEvent {
   watchId: string;
@@ -71,6 +71,7 @@ const KIND_LABEL: Record<EventKind, string> = {
   "application-start": "申込開始",
   "application-end": "締切",
   exam: "試験",
+  "user-target-exam": "受験予定日",
 };
 
 export function eventLabel(kind: EventKind): string {
@@ -104,9 +105,27 @@ export function findUpcomingEvents(
         iso,
       });
     };
-    pushIf("application-start", s.applicationStart);
-    pushIf("application-end", s.applicationEnd);
-    pushIf("exam", s.examDate);
+    if (s.isYearRound) {
+      // 通年型: 申込通知はスキップ、個人受験予定日があれば前日のみ通知
+      if (w.userTargetExamDate) {
+        const d = daysUntil(w.userTargetExamDate);
+        if (Number.isFinite(d) && d >= 0 && d <= 1) {
+          result.push({
+            watchId: w.id,
+            qualificationId: q.id,
+            qualificationName: q.shortName ?? q.name,
+            scheduleLabel: s.label,
+            kind: "user-target-exam",
+            daysUntil: d,
+            iso: w.userTargetExamDate,
+          });
+        }
+      }
+    } else {
+      pushIf("application-start", s.applicationStart);
+      pushIf("application-end", s.applicationEnd);
+      pushIf("exam", s.examDate);
+    }
   }
   return result.sort((a, b) => a.daysUntil - b.daysUntil);
 }
@@ -161,7 +180,10 @@ export function notifyUpcoming(
 
   new Notification("📅 もうすぐ資格イベントがあります", {
     body: lines.join("\n"),
-    icon: "/icons/icon-192.svg",
+    // 注意: Chrome の Notification API は SVG icon を表示しないことがある（OS native へ
+    // ラスタライズが必要なため）。v0.1 は SVG のまま、表示されない場合は OS デフォルト
+    // アイコンにフォールバック。v0.2 で 192x192 PNG を public/ に追加予定。
+    icon: "/icon-192.svg",
     tag: "shikaku-view-upcoming",
   });
   markNotifiedToday();
